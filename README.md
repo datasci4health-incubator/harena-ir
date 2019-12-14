@@ -2,7 +2,7 @@
 Information Retrieval for Harena.
 
 ## Introdução
-Esse guia mostra como fazer recuperação de informação usando o MESH(Medical Subject Headings) como base de busca conectando-o ao solr
+A recuperação de infromação é um tema amplamente estudado e utilizado na computação, nesse projeto em específico o objetivo é usar dessa ferramente para, através da entrada de conceitos relacionados à area da saúde, retornar a anotação que melhor se aplica ao termo dado, unsando o  MESH(Medical Subject Headings) e solr para isso.
 
 ## Guia
 ### Instalação do Solr
@@ -41,8 +41,9 @@ O banco de dados do mesh ficara no diretório ```example/exampledocs```.
 
 ### Banco de dados
 Para adicionarmos novos dados ao nosso core precisamos deixar esses dados num formato xml especifico, para isso primeiramente pegaremos os dados do mesh.
+
 #### Instalando o Mesh
-O banco de dados do mesh que iremos usar estará no formato XML. Entrando no link a seguir faca o download no [desc2020.zip](https://github.com/Iwazo8700/mesh-annotation/blob/master/buid-solr/desc2020.zip)
+O banco de dados do mesh que iremos usar estará no formato XML. Entrando no link a seguir faca o download no [desc2020.zip](https://github.com/Iwazo8700/mesh-annotation/blob/master/buid-solr/desc2020.zip), vale lmebrar que os dados do MESH são disponibilizados gratuitamente e possuem uma ampla documentação sobre sua estruura, para quem quiser conhecer mais a fundo
 
 #### Edição do Mesh
 Com a base instalada vamos editar esse xml para um xml que possa ser lido pelo solr e ser interpretado como informação, o jeito mais fácil que encontrei para fazer isso foi usando xpath e xquery.
@@ -145,6 +146,10 @@ Então deixamos nosso banco de dados em ```example/exampledocs```, como dito ant
 Disso tudo temos tudo pronto, para acessar o dicionário basta acessar esse link:
 ```http://localhost:8983/solr/mesh/select?q=*&wt=json```
 Ele acessa a porta local 8983 do comútador, a busca será dada pela variável "q" e o formato de retorno pela variável "wt"
+
+###O que está acontecendo por trás dos bastidores?
+
+O Managed-schema é usado pelo solr, por conter a indicação dos fields que serão utilizados, para criar um index invertido, que nada mais é que uma forma de indexação de uma base de dados que mapeia os elementos adicionadas e salva em uma tabela e que é meuito eficiente para a realização de buscas, no nosso caso o solr está configurado também para remover as stop words da base de dados dada a ele e para fazer uma tokenização por meio do stemming.
 
 ### Busca
 
