@@ -149,15 +149,16 @@ Disso tudo temos tudo pronto, para acessar o dicionário basta acessar esse link
 ```http://localhost:8983/solr/mesh/select?q=*&wt=json```
 Ele acessa a porta local 8983 do comútador, a busca será dada pela variável "q" e o formato de retorno pela variável "wt"
 
+### Busca
+
+Como dito antes a busca será feita pela variàvel "q", então para se buscar um termo basta colocar ele deopis do "q=", se a busca for um nome composto basta fazer isso ```q="nome composto"```, a sintaxe de ```q=*``` serve para listar os 10 primeiros termos. Caso se deseje especificar uma field em que se deseje procurar usamos a seguinte sintaxe ```q=ConceptName:("Myocardial%20Infarction")```
+
 ### O que está acontecendo por trás dos bastidores?
 
 O Managed-schema é usado pelo solr, por conter a indicação dos fields que serão utilizados, para criar um index invertido, que nada mais é que uma forma de indexação de uma base de dados que mapeia e quebra  os elementos adicionados e salva em uma tabela, tornando se em algo muito eficiente para a realização de buscas, no nosso caso o solr está configurado também para remover as stop words da base de dados dada a ele e para fazer uma tokenização com stemming.
 
 Com o index invertido construido já se pode fazer uma consulta no solr, que vai ser basicamente um requisição HTTP de URLs, o solr pega o que foi buscado e aplica analises paralelas para os filtros até ter a construção de maior relevância de resultado, no nosso caso para haver uma priorização de certos campos, e passando por todo o processo, ele retorna os melhores resultados em forma de JSON
 
-### Busca
-
-Como dito antes a busca será feita pela variàvel "q", então para se buscar um termo basta colocar ele deopis do "q=", se a busca for um nome composto basta fazer isso ```q="nome composto"```, a sintaxe de ```q=*``` serve para listar os 10 primeiros termos. Caso se deseje especificar uma field em que se deseje procurar usamos a seguinte sintaxe ```q=ConceptName:("Myocardial%20Infarction")```
 
 ### Resumo
 
