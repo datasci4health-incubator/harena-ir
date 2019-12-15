@@ -185,7 +185,7 @@ De forma rápida, caso já se tenha tudo pronto a lista de comandos será essa:
 
 * Adicionamos o banco de dados no solr(XMLsolr.xml é o nome do meu banco de dados editado):
 
-```java -jar -Dc=mesh -Dauto example/exampledocs/post.jar desc2020.xml```
+```java -jar -Dc=mesh -Dauto example/exampledocs/post.jar XMLsolr.xml```
 
 * Acessamos a porta local e verificamos se tudo foi adicionado com:
 
