@@ -59,17 +59,17 @@ O formato do arquivo que devemos chegar é
 ```
 onde o boost é opcional.
 
-Para tranformar o mesh em um xml válido usamos o pragrama [parseXML2XMLsolr.xq](https://github.com/Iwazo8700/mesh-annotation/blob/master/buid-solr/parseXML2XMLsolr.xq), nele transformamos os seguintes dados em fields:
-* DescriptorUI
-* ConceptName
-* ConceptUI
-* EntryTerm
-* PreviousIndexing
-* Annotation
-* ScopeNote
-* DateCreated
+Para tranformar o mesh em um xml válido usamos o pragrama [parseXML2XMLsolr.xq](https://github.com/datasci4health-incubator/harena-ir/blob/master/solr-8.3.1/parseXML2XMLsolr.xq), nele transformamos os seguintes dados em fields, podendo adicionar boosts para priorização de campos determinados:
+* DescriptorUI (ID associado a um element do MESH)
+* ConceptName (nome de um elemento do MESH, como doenças por exemplo)
+* ConceptUI (ID relacionada a um nome de uum elemento do MESH)
+* EntryTerm (termos associados ao elemento, como sinônimos)
+* PreviousIndexing (mostra qual categoria o elemento está asociado, por exemplo, antibioóticos)
+* Annotation (informações adicionais sobre o elemento)
+* ScopeNote (Definição do elemento)
+* DateCreated (Data em que o elemento foi adicionado)
 
-O arquivo .xml obtido deve ser salvo no seguinte endereço: solr-8.3.1/example/exampledocs
+O arquivo .xml obtido deve ser salvo no seguinte endereço: solr-8.3.1/example/exampledocs, sendo no nosso caso o [XMLsolr.xml](https://github.com/datasci4health-incubator/harena-ir/blob/master/solr-8.3.1/example/exampledocs/XMLsolr.xml)
 
 
 #### Xpath e Xquery(parseXML2XMLsolr.xq)
@@ -94,7 +94,7 @@ Nesse trecho por exemplo, definimos o caminho do desc2020.xml em $mesh, printamo
 
 ### Managed-Schema
 #### Field
-Nesse arquivo, que fica no endereço solr-8.3.1/server/solr/mesh/conf,  temos varios tipos de classes a serem declaradas, mas para criarmos um campo de busca focamos na classe \<field\>, nela iremos declarar quais tipos de campos estarão à disponibilidade de busca.
+Nesse arquivo, [managed_shcema](https://github.com/datasci4health-incubator/harena-ir/blob/master/solr-8.3.1/server/solr/mesh/conf/managed-schema) (nessa arquivo em quesatão já com todas as declarações),  temos varios tipos de classes a serem declaradas, mas para criarmos um campo de busca focamos na classe \<field\>, nela iremos declarar quais tipos de campos estarão à disponibilidade de busca.
 
 ```<field name=_name_ type=_type_ indexed=_boolean_ stored=_boolean_ required=_boolean_ multiValued=_boolean_ />```
 
@@ -161,6 +161,11 @@ Como dito antes a busca será feita pela variàvel "q", então para se buscar um
 ### O que está acontecendo por trás dos bastidores?
 
 O Managed-schema é usado pelo solr, por conter a indicação dos fields que serão utilizados, para criar um index invertido, que nada mais é que uma forma de indexação de uma base de dados que mapeia e quebra  os elementos adicionados e salva em uma tabela, tornando se em algo muito eficiente para a realização de buscas, no nosso caso o solr está configurado também para remover as stop words da base de dados dada a ele e para fazer uma tokenização com stemming.
+
+Os dados que passamos para o solr estão em arquivo XML com todos campos de interesse nosso, e junto com o campos os boosts opcionais para cada field, que permitem definir uma prioridade de resultado, no nosso caso apresentamos os seguintes pesos para boosts, e que podem ser editados na conversão do desc2020.xml para, no nosso caso, XMLsolr.xml:
+-8.0 para DescriptorUI e ConceptName
+-4.0 para EntryTerm e PreviousIndex
+-2.0  para Annotation e ScopeNote
 
 Com o index invertido construido já se pode fazer uma consulta no solr, que vai ser basicamente um requisição HTTP de URLs, o solr pega o que foi buscado e aplica analises paralelas para os filtros até ter a construção de maior relevância de resultado, no nosso caso para haver uma priorização de certos campos, e passando por todo o processo, ele retorna os melhores resultados em forma de JSON
 
