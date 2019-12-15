@@ -6,7 +6,7 @@ A recuperação de infromação é um tema amplamente estudado e utilizado na co
 
 ## Guia
 ### Instalação do Solr
-Instale em [solr.zip](http://ftp.unicamp.br/pub/apache/lucene/solr/8.3.0/solr-8.3.0.zip), e extraia-o
+Instale em [solr.zip](http://ftp.unicamp.br/pub/apache/lucene/solr/8.3.1/solr-8.3.1.zip), e extraia-o
 
 ### Iniciando o solr
 Para iniciar o solr precisamos estar dentro do diretorio "solr-8.3.0", dele digitamos
