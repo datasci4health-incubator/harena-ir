@@ -1,15 +1,16 @@
 # harena-ir
 Information Retrieval for Harena.
+Caio Emanuel Rhoden - RA214129
 
 ## Introdução
-A recuperação de infromação é um tema amplamente estudado e utilizado na computação, nesse projeto em específico o objetivo é usar dessa ferramente para, através da entrada de conceitos relacionados à area da saúde, retornar a anotação que melhor se aplica ao termo dado, unsando o  MESH(Medical Subject Headings) e solr para isso.
+A recuperação de infromação é um tema amplamente estudado e utilizado na computação, nesse projeto em específico o objetivo é usar dessa ferramente para, através da entrada de conceitos relacionados à area da saúde, retornar o resultado que melhor se aplica ao item pesquisado, unsando o  MESH(Medical Subject Headings) e solr para isso.
 
 ## Guia
 ### Instalação do Solr
 Instale em [solr.zip](http://ftp.unicamp.br/pub/apache/lucene/solr/8.3.1/solr-8.3.1.zip), e extraia-o
 
 ### Iniciando o solr
-Para iniciar o solr precisamos estar dentro do diretorio "solr-8.3.0", dele digitamos
+Para iniciar o solr precisamos estar dentro do diretorio "solr-8.3.1", dele digitamos
 
 ```bin/solr start```
 
@@ -43,10 +44,10 @@ O banco de dados do mesh ficara no diretório ```example/exampledocs```.
 Para adicionarmos novos dados ao nosso core precisamos deixar esses dados num formato xml especifico, para isso primeiramente pegaremos os dados do mesh.
 
 #### Instalando o Mesh
-O banco de dados do mesh que iremos usar estará no formato XML. Entrando no link a seguir faca o download no [desc2020.zip](https://github.com/Iwazo8700/mesh-annotation/blob/master/buid-solr/desc2020.zip), vale lmebrar que os dados do MESH são disponibilizados gratuitamente e possuem uma ampla documentação sobre sua estruura, para quem quiser conhecer mais a fundo
+O banco de dados do mesh que iremos usar estará no formato XML. Entrando no link a seguir faca o download no [desc2020.zip](https://github.com/Iwazo8700/mesh-annotation/blob/master/buid-solr/desc2020.zip), vale lmebrar que os dados do MESH são disponibilizados gratuitamente e possuem uma ampla documentação sobre sua estrutura para quem quiser conhecer mais a fundo
 
 #### Edição do Mesh
-Com a base instalada vamos editar esse xml para um xml que possa ser lido pelo solr e ser interpretado como informação, o jeito mais fácil que encontrei para fazer isso foi usando xpath e xquery.
+Com a base instalada vamos editar esse xml para um xml que possa ser lido pelo solr e ser interpretado como informação, o jeito mais fácil que encontramos para fazer isso foi usando xpath e xquery.
 O formato do arquivo que devemos chegar é 
 ```<add>
      <doc>
@@ -58,7 +59,7 @@ O formato do arquivo que devemos chegar é
 ```
 onde o boost é opcional.
 
-Para tranformar o mesh em um xml válido usei o pragrama [parseXML2XMLsolr.xq](https://github.com/Iwazo8700/mesh-annotation/blob/master/buid-solr/parseXML2XMLsolr.xq), nele transformamos os seguintes dados em fields:
+Para tranformar o mesh em um xml válido usamos o pragrama [parseXML2XMLsolr.xq](https://github.com/Iwazo8700/mesh-annotation/blob/master/buid-solr/parseXML2XMLsolr.xq), nele transformamos os seguintes dados em fields:
 * DescriptorUI
 * ConceptName
 * ConceptUI
@@ -67,10 +68,14 @@ Para tranformar o mesh em um xml válido usei o pragrama [parseXML2XMLsolr.xq](h
 * Annotation
 * ScopeNote
 * DateCreated
-#### Xpath e Xquery(parseXML2XMLsolr.xq)
-A lógica usada para fazer esse programa foi usando caminhos que cheguem aonde quero aplicando a / para passar de uma camada para outra até chegar no termo desejado ou quando existia um termo unico usava a // para ir direto ao ponto. O xquery usei no momento e que se tinha um termo que desejava inserir, mas ele não era simples e precisava pegar esse termo várias vezes, para isso usei o conseito de for do xquery. Tudo que precisei fazer nesse ponto foi codificado na xbase, um editor especializado nesse tipo de situação.
 
-```let $mesh := doc("/home/enzo/Documentos/Docker/desc2020.xml")
+O arquivo .xml obtido deve ser salvo no seguinte endereço: solr-8.3.1/example/exampledocs
+
+
+#### Xpath e Xquery(parseXML2XMLsolr.xq)
+A lógica usada para fazer esse programa foi usando caminhos que cheguem aonde queremos aplicando a "/"para passar de uma camada para outra até chegar no termo desejado ou quando existia um termo unico usar a "//" para ir direto ao ponto. O xquery usamos no momento e que se tinha um termo que desejava inserir, mas ele não era simples e precisava pegar esse termo várias vezes, para isso usamos o conseito de for do xquery. Tudo que precisamos fazer nesse ponto foi codificado na xbase, um editor especializado nesse tipo de situação.
+
+```let $mesh := doc("/home/USER/Documentos/Docker/desc2020.xml")
 
 return
 <add>
@@ -84,12 +89,12 @@ return
 </add>
 ```
 
-Nesse trecho por exemplo, defini o caminho do desc2020.xml em $mesh, printei o \<add\>, criei um for que passa por cada DescriptorRecord do arquivo, dentro de cada DescriptorRecord printei um \<doc\>, um \<field name="ScopeNote" boost="2.0"\>, o texto do ScopeNote desse DescriptorRecord e fechei o field com \<\\field\>, finalizando esse doc com o <\doc>. Depois de passar por todos DescriptorRecord, finalizo o documento com o \<\\add\>, adquirindo um documento que começa com <add>, termina com \<\\add\>, e dentro desse add vários \<doc\> e \<\\doc\>, cada um com seu ScopeNote. Lembrando que o boost é opcional e só será usado para definir uma prioridade de field na hora da busca.
+Nesse trecho por exemplo, definimos o caminho do desc2020.xml em $mesh, printamos o \<add\>, criamos um for que passa por cada DescriptorRecord do arquivo, dentro de cada DescriptorRecord printamos um \<doc\>, um \<field name="ScopeNote" boost="2.0"\>, o texto do ScopeNote desse DescriptorRecord e fechamos o field com \<\\field\>, finalizando esse doc com o <\doc>. Depois de passar por todos DescriptorRecord, finalizamos o documento com o \<\\add\>, adquirindo um documento que começa com <add>, termina com \<\\add\>, e dentro desse add vários \<doc\> e \<\\doc\>, cada um com seu ScopeNote. Lembrando que o boost é opcional e só será usado para definir uma prioridade de field na hora da busca.
 
 
 ### Managed-Schema
 #### Field
-Nesse arquivo temos varios tipos de classes a serem declaradas, mas para criarmos um campo de busca focamos na classe \<field\>, nela iremos declarar quais tipos de campos estarão à disponibilidade de busca.
+Nesse arquivo, que fica no endereço solr-8.3.1/server/solr/mesh/conf,  temos varios tipos de classes a serem declaradas, mas para criarmos um campo de busca focamos na classe \<field\>, nela iremos declarar quais tipos de campos estarão à disponibilidade de busca.
 
 ```<field name=_name_ type=_type_ indexed=_boolean_ stored=_boolean_ required=_boolean_ multiValued=_boolean_ />```
 
@@ -183,9 +188,9 @@ De forma rápida, caso já se tenha tudo pronto a lista de comandos será essa:
 
 ```../../bin/solr restart```
 
-* Adicionamos o banco de dados no solr(XMLsolr.xml é o nome do meu banco de dados editado):
+* Adicionamos o banco de dados no solr(XMLsolr.xml é o nome do banco de dados obtido ao pegar os fields que seriam úteis do mesh):
 
-```java -jar -Dc=mesh -Dauto example/exampledocs/post.jar XMLsolr.xml```
+```java -jar -Dc=mesh -Dauto example/exampledocs/post.jar solr-8.3.1/example/exampledocs/XMLsolr.xml```
 
 * Acessamos a porta local e verificamos se tudo foi adicionado com:
 
