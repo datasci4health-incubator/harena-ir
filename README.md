@@ -1,6 +1,7 @@
 # harena-ir
 Information Retrieval for Harena.
 Caio Emanuel Rhoden - RA214129
+Enzo Hideki Iwata - RA215394
 
 ## Introdução
 A recuperação de informação é um tema amplamente estudado e utilizado na computação, nesse projeto em específico o objetivo é usar dessa ferramenta para, através da entrada de conceitos relacionados à área da saúde, retornar o resultado que melhor se aplica ao item pesquisado, usando o  MESH(Medical Subject Headings) e solr para isso.
