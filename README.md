@@ -196,7 +196,7 @@ De forma rápida, caso já se tenha tudo pronto a lista de comandos será essa:
 
 * Adicionamos o banco de dados no solr(XMLsolr.xml é o nome do banco de dados obtido ao pegar os fields que seriam úteis do mesh):
 
-```java -jar -Dc=mesh -Dauto example/exampledocs/post.jar solr-8.3.1/example/exampledocs/XMLsolr.xml```
+```java -jar -Dc=mesh -jar post.jar XMLsolr.xml```
 
 * Acessamos a porta local e verificamos se tudo foi adicionado com:
 
