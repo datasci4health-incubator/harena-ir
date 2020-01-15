@@ -1,0 +1,244 @@
+2019-12-04 12:25:57.791 INFO  (main) [   ] o.e.j.u.log Logging initialized @3148ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-12-04 12:25:58.609 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.rewrite.handler.RedirectRegexRule.setReplacement(java.lang.String) in file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/etc/jetty.xml
+2019-12-04 12:25:58.887 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2019-12-04 12:25:58.887 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/etc/jetty-http.xml
+2019-12-04 12:25:58.907 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 1.8.0_221-b11
+2019-12-04 12:25:58.978 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/contexts/] at interval 0
+2019-12-04 12:25:59.767 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-12-04 12:25:59.794 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-12-04 12:25:59.795 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-12-04 12:25:59.799 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2019-12-04 12:26:00.167 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-12-04 12:26:00.308 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.3.0
+2019-12-04 12:26:00.309 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-12-04 12:26:00.309 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0
+2019-12-04 12:26:00.311 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-12-04T12:26:00.311Z
+2019-12-04 12:26:00.471 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/example/techproducts/solr
+2019-12-04 12:26:00.513 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/example/techproducts/solr/solr.xml
+2019-12-04 12:26:01.062 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@691a7f8f, but no JMX reporters were configured - adding default JMX reporter.
+2019-12-04 12:26:02.574 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2019-12-04 12:26:04.197 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@5674e1f2[provider=null,keyStore=null,trustStore=null]
+2019-12-04 12:26:04.214 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@5674e1f2[provider=null,keyStore=null,trustStore=null]
+2019-12-04 12:26:04.737 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@52d239ba[provider=null,keyStore=null,trustStore=null]
+2019-12-04 12:26:04.738 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@52d239ba[provider=null,keyStore=null,trustStore=null]
+2019-12-04 12:26:05.644 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-12-04 12:26:05.661 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-12-04 12:26:06.111 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@691a7f8f
+2019-12-04 12:26:06.119 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@691a7f8f
+2019-12-04 12:26:06.136 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@691a7f8f
+2019-12-04 12:26:06.413 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/example/techproducts/solr
+2019-12-04 12:26:06.689 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@1a4013{/solr,file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr-webapp/webapp/,AVAILABLE}{/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr-webapp/webapp}
+2019-12-04 12:26:06.735 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@3d285d7e{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2019-12-04 12:26:06.736 INFO  (main) [   ] o.e.j.s.Server Started @12096ms
+2019-12-04 12:26:08.887 INFO  (qtp283383329-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=180
+2019-12-04 12:26:09.293 INFO  (qtp283383329-13) [   x:techproducts] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=techproducts&action=STATUS&wt=json} status=0 QTime=1
+2019-12-04 12:26:09.387 INFO  (qtp283383329-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=35
+2019-12-04 12:26:09.435 INFO  (qtp283383329-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=28
+2019-12-04 12:26:09.452 INFO  (qtp283383329-16) [   x:techproducts] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=techproducts&action=STATUS&wt=json} status=0 QTime=0
+2019-12-04 12:26:09.619 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.h.a.CoreAdminOperation core create command name=techproducts&action=CREATE&instanceDir=techproducts&wt=json
+2019-12-04 12:26:09.906 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.c.SolrResourceLoader [techproducts] Added 61 libs to classloader, from paths: [/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/clustering/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/extraction/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/langid/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/velocity/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/dist]
+2019-12-04 12:26:12.543 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.3.0
+2019-12-04 12:26:12.666 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2019-12-04 12:26:13.218 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.s.IndexSchema [techproducts] Schema name=example
+2019-12-04 12:26:14.987 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+2019-12-04 12:26:14.989 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+2019-12-04 12:26:14.989 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2019-12-04 12:26:14.990 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2019-12-04 12:26:15.014 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
+2019-12-04 12:26:15.015 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2019-12-04 12:26:15.015 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2019-12-04 12:26:15.015 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2019-12-04 12:26:15.015 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2019-12-04 12:26:15.190 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.c.CoreContainer Creating SolrCore 'techproducts' using configuration from instancedir /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/example/techproducts/solr/techproducts, trusted=true
+2019-12-04 12:26:15.265 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.techproducts' (registry 'solr.core.techproducts') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@691a7f8f
+2019-12-04 12:26:15.360 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.c.SolrCore [[techproducts] ] Opening new SolrCore at [/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/example/techproducts/solr/techproducts], dataDir=[/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/example/techproducts/solr/techproducts/data/]
+2019-12-04 12:26:16.008 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-12-04 12:26:17.442 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-12-04 12:26:17.443 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-12-04 12:26:17.464 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-12-04 12:26:17.464 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-12-04 12:26:17.527 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.s.SolrIndexSearcher Opening [Searcher@32f21be4[techproducts] main]
+2019-12-04 12:26:17.572 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/example/techproducts/solr/techproducts/conf
+2019-12-04 12:26:17.579 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/example/techproducts/solr/techproducts/conf
+2019-12-04 12:26:17.579 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2019-12-04 12:26:17.581 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using file:dir=/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/example/techproducts/solr/techproducts/conf
+2019-12-04 12:26:17.583 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+2019-12-04 12:26:17.585 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.s.a.ManagedWordSetResource Loaded 35 words for /schema/analysis/stopwords/english
+2019-12-04 12:26:17.586 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.ManagedResource Notified 2 observers of /schema/analysis/stopwords/english
+2019-12-04 12:26:17.587 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using file:dir=/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/example/techproducts/solr/techproducts/conf
+2019-12-04 12:26:17.587 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+2019-12-04 12:26:17.589 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.s.a.ManagedSynonymGraphFilterFactory Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+2019-12-04 12:26:17.595 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.r.ManagedResource Notified 2 observers of /schema/analysis/synonyms/english
+2019-12-04 12:26:17.678 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-12-04 12:26:17.728 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-12-04 12:26:17.747 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2019-12-04 12:26:17.767 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2019-12-04 12:26:17.798 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2019-12-04 12:26:17.801 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/example/techproducts/solr/techproducts/conf/elevate.xml
+2019-12-04 12:26:17.847 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-12-04 12:26:17.903 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1651992038372016128
+2019-12-04 12:26:17.911 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@32f21be4[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-12-04 12:26:17.926 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=techproducts&action=CREATE&instanceDir=techproducts&wt=json} status=0 QTime=8306
+2019-12-04 12:26:18.045 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=131
+2019-12-04 12:26:18.046 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-12-04 12:26:18.046 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-12-04 12:26:18.047 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2019-12-04 12:26:18.082 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.SolrCore [techproducts] Registered new searcher Searcher@32f21be4[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-12-04 12:26:18.851 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[F8V7067-APL-KIT (1651992039149010944), IW-02 (1651992039357677568)]} 0 568
+2019-12-04 12:26:18.889 INFO  (qtp283383329-16) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{} 0 23
+2019-12-04 12:26:18.897 ERROR (qtp283383329-16) [   x:techproducts] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Document contains multiple values for uniqueKey field: id=[D000001, D000001]
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:127)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:279)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:225)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:261)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:188)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-12-04 12:26:20.381 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[MA147LL/A (1651992040936833024)]} 0 57
+2019-12-04 12:26:20.453 INFO  (qtp283383329-16) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[TWINX2048-3200PRO (1651992041007087616), VS1GB400C3 (1651992041030156288), VDBDB1A16 (1651992041041690624)]} 0 60
+2019-12-04 12:26:20.464 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[9885A004 (1651992041052176384)]} 0 6
+2019-12-04 12:26:20.486 INFO  (qtp283383329-16) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[UTF8TEST (1651992041071050752)]} 0 14
+2019-12-04 12:26:20.512 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[USD (1651992041098313728), EUR (1651992041101459456), GBP (1651992041103556608), NOK (1651992041105653760)]} 0 19
+2019-12-04 12:26:20.531 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{} 0 12
+2019-12-04 12:26:20.532 ERROR (qtp283383329-17) [   x:techproducts] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: ERROR: [doc=D000001] unknown field 'descriptor_name'
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:226)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:109)
+	at org.apache.solr.update.DirectUpdateHandler2.updateDocOrDocValues(DirectUpdateHandler2.java:969)
+	at org.apache.solr.update.DirectUpdateHandler2.doNormalUpdate(DirectUpdateHandler2.java:344)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc0(DirectUpdateHandler2.java:291)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:238)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:76)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:259)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doVersionAdd(DistributedUpdateProcessor.java:489)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.lambda$versionAdd$0(DistributedUpdateProcessor.java:339)
+	at org.apache.solr.update.VersionBucket.runWithLock(VersionBucket.java:50)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:339)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:225)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:261)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:188)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-12-04 12:26:20.543 INFO  (qtp283383329-16) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[3007WFP (1651992041137111040)]} 0 4
+2019-12-04 12:26:20.558 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[SOLR1000 (1651992041150742528)]} 0 6
+2019-12-04 12:26:20.573 INFO  (qtp283383329-16) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[adata (1651992041161228288), apple (1651992041162276864), asus (1651992041163325440), ati (1651992041164374016), belkin (1651992041165422592), canon (1651992041166471168), corsair (1651992041167519744), dell (1651992041168568320), maxtor (1651992041169616896), samsung (1651992041170665472), ... (11 adds)]} 0 11
+2019-12-04 12:26:20.586 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[0579B002 (1651992041181151232)]} 0 5
+2019-12-04 12:26:20.606 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[EN7800GTX/2DHTV/256M (1651992041193734144), 100-435805 (1651992041202122752)]} 0 15
+2019-12-04 12:26:20.683 INFO  (qtp283383329-16) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[GB18030TEST (1651992041284960256)]} 0 73
+2019-12-04 12:26:20.720 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[SP2514N (1651992041319563264), 6H500F0 (1651992041322708992)]} 0 32
+2019-12-04 12:26:20.731 INFO  (qtp283383329-16) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[VA902B (1651992041335291904)]} 0 3
+2019-12-04 12:26:20.734 INFO  (qtp283383329-16) [   x:techproducts] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1651992041340534784,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-12-04 12:26:20.735 INFO  (qtp283383329-16) [   x:techproducts] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@3e67000d commitCommandVersion:1651992041340534784
+2019-12-04 12:26:21.806 INFO  (qtp283383329-16) [   x:techproducts] o.a.s.s.SolrIndexSearcher Opening [Searcher@34d749ad[techproducts] main]
+2019-12-04 12:26:21.808 INFO  (qtp283383329-16) [   x:techproducts] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-12-04 12:26:21.809 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@34d749ad[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.3.0):C32:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-70-generic, timestamp=1575462381002}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-12-04 12:26:21.809 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-12-04 12:26:21.841 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.SolrCore [techproducts] Registered new searcher Searcher@34d749ad[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.3.0):C32:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-70-generic, timestamp=1575462381002}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-12-04 12:26:21.855 INFO  (qtp283383329-16) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={commit=true}{commit=} 0 1121
+2019-12-04 12:26:26.907 INFO  (qtp283383329-16) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[9885A004 (1651992047800811520)]} 0 14
+2019-12-04 12:26:26.918 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1651992047824928768,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-12-04 12:26:26.919 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@3e67000d commitCommandVersion:1651992047824928768
+2019-12-04 12:26:28.080 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.s.SolrIndexSearcher Opening [Searcher@35a19d26[techproducts] main]
+2019-12-04 12:26:28.082 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-12-04 12:26:28.082 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@35a19d26[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.3.0):C32/1:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-70-generic, timestamp=1575462381002}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_1(8.3.0):C1:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-70-generic, timestamp=1575462386944}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-12-04 12:26:28.082 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-12-04 12:26:28.090 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.SolrCore [techproducts] Registered new searcher Searcher@35a19d26[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.3.0):C32/1:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-70-generic, timestamp=1575462381002}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_1(8.3.0):C1:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-70-generic, timestamp=1575462386944}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-12-04 12:26:28.096 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={commit=true}{commit=} 0 1178
+2019-12-04 12:27:19.090 INFO  (qtp283383329-17) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=sd500&wt=json} hits=1 status=0 QTime=49
+2019-12-04 12:33:31.024 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@3d285d7e{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2019-12-04 12:33:31.025 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2019-12-04 12:33:31.161 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=2115628016
+2019-12-04 12:33:31.163 INFO  (coreCloseExecutor-15-thread-1) [   x:techproducts] o.a.s.c.SolrCore [techproducts]  CLOSING SolrCore org.apache.solr.core.SolrCore@19ba0e38
+2019-12-04 12:33:31.164 INFO  (coreCloseExecutor-15-thread-1) [   x:techproducts] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.techproducts, tag=SolrCore@19ba0e38
+2019-12-04 12:33:31.165 INFO  (coreCloseExecutor-15-thread-1) [   x:techproducts] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@407f7a3f: rootName = null, domain = solr.core.techproducts, service url = null, agent id = null] for registry solr.core.techproducts / com.codahale.metrics.MetricRegistry@46a9ccd2
+2019-12-04 12:33:31.425 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2019-12-04 12:33:31.426 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@51df223b: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@7c835aaf
+2019-12-04 12:33:31.434 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2019-12-04 12:33:31.435 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1568159: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@452d38d2
+2019-12-04 12:33:31.439 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2019-12-04 12:33:31.440 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4fcee388: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@13d23d96
+2019-12-04 12:33:31.867 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@1a4013{/solr,null,UNAVAILABLE}{/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr-webapp/webapp}

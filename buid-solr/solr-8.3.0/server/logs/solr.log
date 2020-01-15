@@ -1,0 +1,68 @@
+2019-12-09 19:19:03.832 INFO  (main) [   ] o.e.j.u.log Logging initialized @3125ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-12-09 19:19:05.754 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.rewrite.handler.RedirectRegexRule.setReplacement(java.lang.String) in file:///home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/etc/jetty.xml
+2019-12-09 19:19:06.207 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2019-12-09 19:19:06.208 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/etc/jetty-http.xml
+2019-12-09 19:19:06.237 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 1.8.0_221-b11
+2019-12-09 19:19:06.445 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/contexts/] at interval 0
+2019-12-09 19:19:07.719 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-12-09 19:19:07.742 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-12-09 19:19:07.742 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-12-09 19:19:07.749 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2019-12-09 19:19:08.085 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-12-09 19:19:08.124 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.3.0
+2019-12-09 19:19:08.125 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-12-09 19:19:08.126 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0
+2019-12-09 19:19:08.131 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-12-09T19:19:08.131Z
+2019-12-09 19:19:08.332 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/solr
+2019-12-09 19:19:08.377 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/solr/solr.xml
+2019-12-09 19:19:09.059 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3, but no JMX reporters were configured - adding default JMX reporter.
+2019-12-09 19:19:10.952 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2019-12-09 19:19:11.866 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@e8df99a[provider=null,keyStore=null,trustStore=null]
+2019-12-09 19:19:11.866 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@e8df99a[provider=null,keyStore=null,trustStore=null]
+2019-12-09 19:19:12.184 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@5c10f1c3[provider=null,keyStore=null,trustStore=null]
+2019-12-09 19:19:12.184 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@5c10f1c3[provider=null,keyStore=null,trustStore=null]
+2019-12-09 19:19:12.834 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-12-09 19:19:12.858 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-12-09 19:19:13.311 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-12-09 19:19:13.315 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-12-09 19:19:13.330 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-12-09 19:19:13.859 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/solr
+2019-12-09 19:19:13.860 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [mesh]
+2019-12-09 19:19:14.190 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrResourceLoader [mesh] Added 61 libs to classloader, from paths: [/home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/contrib/clustering/lib, /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/contrib/extraction/lib, /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/contrib/langid/lib, /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/contrib/velocity/lib, /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/dist]
+2019-12-09 19:19:14.373 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@10163d6{/solr,file:///home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/solr-webapp/webapp/,AVAILABLE}{/home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/solr-webapp/webapp}
+2019-12-09 19:19:14.529 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@1c1bbc4e{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2019-12-09 19:19:14.529 INFO  (main) [   ] o.e.j.s.Server Started @13826ms
+2019-12-09 19:19:17.643 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.3.0
+2019-12-09 19:19:18.404 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.IndexSchema [mesh] Schema name=default-config
+2019-12-09 19:19:20.625 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2019-12-09 19:19:20.753 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.CoreContainer Creating SolrCore 'mesh' using configuration from instancedir /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/solr/mesh, trusted=true
+2019-12-09 19:19:20.888 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.mesh' (registry 'solr.core.mesh') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-12-09 19:19:20.952 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrCore [[mesh] ] Opening new SolrCore at [/home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/solr/mesh], dataDir=[/home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/solr/mesh/data/]
+2019-12-09 19:19:21.162 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-12-09 19:19:22.706 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-12-09 19:19:22.707 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-12-09 19:19:22.729 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-12-09 19:19:22.729 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-12-09 19:19:22.910 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.SolrIndexSearcher Opening [Searcher@4d6fd9a2[mesh] main]
+2019-12-09 19:19:22.975 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/solr/mesh/conf
+2019-12-09 19:19:23.086 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-12-09 19:19:23.125 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-12-09 19:19:23.163 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-12-09 19:19:23.210 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1652471012482088960
+2019-12-09 19:19:23.219 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4d6fd9a2[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-12-09 19:19:23.219 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-12-09 19:19:23.219 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-12-09 19:19:23.250 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.SolrCore [mesh] Registered new searcher Searcher@4d6fd9a2[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-12-09 19:19:25.461 WARN  (qtp333683827-17) [   x:mesh] o.a.s.h.l.XMLLoader Ignoring field boost: 8.0 as index-time boosts are not supported anymore
+2019-12-09 19:19:38.550 INFO  (qtp333683827-17) [   x:mesh] o.a.s.u.p.LogUpdateProcessorFactory [mesh]  webapp=/solr path=/update params={}{add=[ad931c5f-961e-4098-9c1c-8378276fe2af (1652471014855016448), 79c5bf31-041c-41b0-82a1-84f00782d5c3 (1652471014987137024), b6516dca-d61c-41cb-89a6-46c92ab0ab63 (1652471014995525632), f7eaef27-77b2-4e06-a5c4-d29ad3894b31 (1652471015002865664), 8249877b-db50-418f-a006-484f410ff40b (1652471015008108544), bac1f61f-5e85-4499-a46e-d00f8eccc8cb (1652471015011254272), 832e9f70-16b7-470f-9198-64e9c1f8b570 (1652471015016497152), 7e3407b8-594c-472f-a642-5bcaaa2299a7 (1652471015028031488), afbc8d0c-b970-4e19-b78c-e872fa5c132e (1652471015034322944), 11be21bf-cd35-4148-a6ec-51c2a765c40f (1652471015042711552), ... (29640 adds)]} 0 13306
+2019-12-09 19:19:38.624 INFO  (qtp333683827-13) [   x:mesh] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1652471028644839424,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-12-09 19:19:38.624 INFO  (qtp333683827-13) [   x:mesh] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@4404ce55 commitCommandVersion:1652471028644839424
+2019-12-09 19:19:46.403 INFO  (qtp333683827-13) [   x:mesh] o.a.s.s.SolrIndexSearcher Opening [Searcher@5a1133b6[mesh] main]
+2019-12-09 19:19:46.412 INFO  (qtp333683827-13) [   x:mesh] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-12-09 19:19:46.413 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5a1133b6[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.3.0):C29640:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-72-generic, timestamp=1575919184587}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-12-09 19:19:46.413 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-12-09 19:19:46.471 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.SolrCore [mesh] Registered new searcher Searcher@5a1133b6[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.3.0):C29640:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-72-generic, timestamp=1575919184587}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-12-09 19:19:46.487 INFO  (qtp333683827-13) [   x:mesh] o.a.s.u.p.LogUpdateProcessorFactory [mesh]  webapp=/solr path=/update params={commit=true}{commit=} 0 7864
+2019-12-09 19:21:39.170 INFO  (qtp333683827-18) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=*&wt=json} hits=29640 status=0 QTime=5358
+2019-12-09 19:22:26.787 INFO  (qtp333683827-19) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=myocardial+infarction&wt=json} hits=157 status=0 QTime=3031
+2019-12-09 19:22:43.269 INFO  (qtp333683827-19) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="myocardial+infarction"&wt=json} hits=42 status=0 QTime=656

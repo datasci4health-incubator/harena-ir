@@ -1,0 +1,17 @@
+<add>
+  <doc>
+    <field name="id">D000001</field>
+    <field name="descriptor_name">Calcimycin</field>
+    <field name="date_created">1974-11-19</field>
+  </doc>
+  <doc>
+    <field name="id">D000002</field>
+    <field name="descriptor_name">Temefos</field>
+    <field name="date_created">1999-01-01</field>
+  </doc>
+  <doc>
+    <field name="id">D000003</field>
+    <field name="descriptor_name">Abattoirs</field>
+    <field name="date_created">1999-01-01</field>
+  </doc>
+</add>
