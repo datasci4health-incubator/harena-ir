@@ -1,0 +1,288 @@
+<response>
+<result name="response" numFound="52" start="0">
+<doc>
+<str name="DescriptorUI">D006342</str>
+<arr name="ConceptName">
+<str>Heart Rupture, Post-Infarction</str>
+</arr>
+<arr name="ConceptUI">
+<str>M0009963</str>
+</arr>
+<arr name="EntryTerm">
+<str>Heart Rupture, Post-Infarction</str>
+<str>Heart Rupture, Post Infarction</str>
+<str>Post-Infarction Heart Rupture</str>
+<str>Heart Ruptures, Post-Infarction</str>
+<str>Post Infarction Heart Rupture</str>
+<str>Post-Infarction Heart Ruptures</str>
+<str>Rupture, Post-Infarction Heart</str>
+<str>Ruptures, Post-Infarction Heart</str>
+<str>Cardiac Rupture, Post-Infarction</str>
+<str>Cardiac Rupture, Post Infarction</str>
+<str>Cardiac Ruptures, Post-Infarction</str>
+<str>Post-Infarction Cardiac Rupture</str>
+<str>Post-Infarction Cardiac Ruptures</str>
+<str>Rupture, Post-Infarction Cardiac</str>
+<str>Ruptures, Post-Infarction Cardiac</str>
+</arr>
+<arr name="PreviousIndexing">
+<str>Heart Rupture (1978-1986)</str>
+<str>Myocardial Infarction (1979-1986)</str>
+</arr>
+<str name="Annotation">
+do not coordinate with MYOCARDIAL INFARCTION unless specifically discussed
+</str>
+<str name="ScopeNote">
+Laceration or tearing of cardiac tissues appearing after MYOCARDIAL INFARCTION.
+</str>
+<date name="DateCreated">1986-06-24T00:00:00Z</date>
+<str name="id">7d743d6d-ddaa-44e1-a35b-e805433d03ab</str>
+<long name="_version_">1661355682212872192</long>
+</doc>
+<doc>
+<str name="DescriptorUI">D006342</str>
+<arr name="ConceptName">
+<str>Heart Rupture, Post-Infarction</str>
+</arr>
+<arr name="ConceptUI">
+<str>M0009963</str>
+</arr>
+<arr name="EntryTerm">
+<str>Heart Rupture, Post-Infarction</str>
+<str>Heart Rupture, Post Infarction</str>
+<str>Post-Infarction Heart Rupture</str>
+<str>Heart Ruptures, Post-Infarction</str>
+<str>Post Infarction Heart Rupture</str>
+<str>Post-Infarction Heart Ruptures</str>
+<str>Rupture, Post-Infarction Heart</str>
+<str>Ruptures, Post-Infarction Heart</str>
+<str>Cardiac Rupture, Post-Infarction</str>
+<str>Cardiac Rupture, Post Infarction</str>
+<str>Cardiac Ruptures, Post-Infarction</str>
+<str>Post-Infarction Cardiac Rupture</str>
+<str>Post-Infarction Cardiac Ruptures</str>
+<str>Rupture, Post-Infarction Cardiac</str>
+<str>Ruptures, Post-Infarction Cardiac</str>
+</arr>
+<arr name="PreviousIndexing">
+<str>Heart Rupture (1978-1986)</str>
+<str>Myocardial Infarction (1979-1986)</str>
+</arr>
+<str name="Annotation">
+do not coordinate with MYOCARDIAL INFARCTION unless specifically discussed
+</str>
+<str name="ScopeNote">
+Laceration or tearing of cardiac tissues appearing after MYOCARDIAL INFARCTION.
+</str>
+<date name="DateCreated">1986-06-24T00:00:00Z</date>
+<str name="id">4e6764f5-045a-4a0b-a1bb-777a8481d96c</str>
+<long name="_version_">1661358164895858689</long>
+</doc>
+<doc>
+<str name="DescriptorUI">D000077785</str>
+<arr name="ConceptName">
+<str>Tenecteplase</str>
+<str>Metalyse</str>
+<str>TNKase</str>
+</arr>
+<arr name="ConceptUI">
+<str>M0335155</str>
+<str>M0476108</str>
+<str>M0476109</str>
+</arr>
+<arr name="EntryTerm">
+<str>Tenecteplase</str>
+<str>Metalyse</str>
+<str>TNKase</str>
+</arr>
+<str name="ScopeNote">
+A tissue plasminogen activator enzyme that acts as a fibrinolytic agent; it is used for the dissolution of blood clots, such as those that occur in acute MYOCARDIAL INFARCTION.
+</str>
+<date name="DateCreated">2018-07-09T00:00:00Z</date>
+<str name="id">db9155fe-62cd-460f-9e59-0d2cff43def5</str>
+<long name="_version_">1661355677792075776</long>
+</doc>
+<doc>
+<str name="DescriptorUI">D000077785</str>
+<arr name="ConceptName">
+<str>Tenecteplase</str>
+<str>Metalyse</str>
+<str>TNKase</str>
+</arr>
+<arr name="ConceptUI">
+<str>M0335155</str>
+<str>M0476108</str>
+<str>M0476109</str>
+</arr>
+<arr name="EntryTerm">
+<str>Tenecteplase</str>
+<str>Metalyse</str>
+<str>TNKase</str>
+</arr>
+<str name="ScopeNote">
+A tissue plasminogen activator enzyme that acts as a fibrinolytic agent; it is used for the dissolution of blood clots, such as those that occur in acute MYOCARDIAL INFARCTION.
+</str>
+<date name="DateCreated">2018-07-09T00:00:00Z</date>
+<str name="id">04be0bfc-5871-41f6-b871-405de2862aa1</str>
+<long name="_version_">1661358162626740224</long>
+</doc>
+<doc>
+<str name="DescriptorUI">D054058</str>
+<arr name="ConceptName">
+<str>Acute Coronary Syndrome</str>
+</arr>
+<arr name="ConceptUI">
+<str>M0500631</str>
+</arr>
+<arr name="EntryTerm">
+<str>Acute Coronary Syndrome</str>
+<str>Acute Coronary Syndromes</str>
+<str>Coronary Syndrome, Acute</str>
+<str>Coronary Syndromes, Acute</str>
+<str>Syndrome, Acute Coronary</str>
+<str>Syndromes, Acute Coronary</str>
+</arr>
+<str name="ScopeNote">
+An episode of MYOCARDIAL ISCHEMIA that generally lasts longer than a transient anginal episode that ultimately may lead to MYOCARDIAL INFARCTION.
+</str>
+<date name="DateCreated">2007-07-09T00:00:00Z</date>
+<str name="id">acb0a0cb-e33f-4c62-af21-94a39341250c</str>
+<long name="_version_">1661355690405396481</long>
+</doc>
+<doc>
+<str name="DescriptorUI">D054058</str>
+<arr name="ConceptName">
+<str>Acute Coronary Syndrome</str>
+</arr>
+<arr name="ConceptUI">
+<str>M0500631</str>
+</arr>
+<arr name="EntryTerm">
+<str>Acute Coronary Syndrome</str>
+<str>Acute Coronary Syndromes</str>
+<str>Coronary Syndrome, Acute</str>
+<str>Coronary Syndromes, Acute</str>
+<str>Syndrome, Acute Coronary</str>
+<str>Syndromes, Acute Coronary</str>
+</arr>
+<str name="ScopeNote">
+An episode of MYOCARDIAL ISCHEMIA that generally lasts longer than a transient anginal episode that ultimately may lead to MYOCARDIAL INFARCTION.
+</str>
+<date name="DateCreated">2007-07-09T00:00:00Z</date>
+<str name="id">2912fb07-d58b-4cd7-97c3-3c4140260eee</str>
+<long name="_version_">1661358170954530817</long>
+</doc>
+<doc>
+<str name="DescriptorUI">D003328</str>
+<arr name="ConceptName">
+<str>Coronary Thrombosis</str>
+</arr>
+<arr name="ConceptUI">
+<str>M0005194</str>
+</arr>
+<arr name="EntryTerm">
+<str>Coronary Thrombosis</str>
+<str>Thrombosis, Coronary</str>
+<str>Coronary Thromboses</str>
+<str>Thromboses, Coronary</str>
+</arr>
+<arr name="PreviousIndexing">
+<str>Coronary Disease (1966-1986)</str>
+</arr>
+<str name="Annotation">
+do not confuse "mural thrombus" with "coronary thrombosis": index under HEART DISEASES + THROMBOSIS
+</str>
+<str name="ScopeNote">
+Coagulation of blood in any of the CORONARY VESSELS. The presence of a blood clot (THROMBUS) often leads to MYOCARDIAL INFARCTION.
+</str>
+<date name="DateCreated">1986-03-27T00:00:00Z</date>
+<str name="id">0ca52bd3-e42a-447b-9380-fd7958e77148</str>
+<long name="_version_">1661355680586530816</long>
+</doc>
+<doc>
+<str name="DescriptorUI">D003328</str>
+<arr name="ConceptName">
+<str>Coronary Thrombosis</str>
+</arr>
+<arr name="ConceptUI">
+<str>M0005194</str>
+</arr>
+<arr name="EntryTerm">
+<str>Coronary Thrombosis</str>
+<str>Thrombosis, Coronary</str>
+<str>Coronary Thromboses</str>
+<str>Thromboses, Coronary</str>
+</arr>
+<arr name="PreviousIndexing">
+<str>Coronary Disease (1966-1986)</str>
+</arr>
+<str name="Annotation">
+do not confuse "mural thrombus" with "coronary thrombosis": index under HEART DISEASES + THROMBOSIS
+</str>
+<str name="ScopeNote">
+Coagulation of blood in any of the CORONARY VESSELS. The presence of a blood clot (THROMBUS) often leads to MYOCARDIAL INFARCTION.
+</str>
+<date name="DateCreated">1986-03-27T00:00:00Z</date>
+<str name="id">8aefbf67-faa6-491b-9428-d1578ebb18b8</str>
+<long name="_version_">1661358163967868931</long>
+</doc>
+<doc>
+<str name="DescriptorUI">D000077545</str>
+<arr name="ConceptName">
+<str>Eplerenone</str>
+<str>Inspra</str>
+<str>
+9,11-Epoxy-7-(methoxycarbonyl)-3-oxo-17-pregn-4-ene-21,17-carbolactone
+</str>
+</arr>
+<arr name="ConceptUI">
+<str>M0371594</str>
+<str>M0439953</str>
+<str>M000640866</str>
+</arr>
+<arr name="EntryTerm">
+<str>Eplerenone</str>
+<str>Eplerenon</str>
+<str>Inspra</str>
+<str>
+9,11-Epoxy-7-(methoxycarbonyl)-3-oxo-17-pregn-4-ene-21,17-carbolactone
+</str>
+</arr>
+<str name="ScopeNote">
+A spironolactone derivative and selective ALDOSTERONE RECEPTOR antagonist that is used in the management of HYPERTENSION and CONGESTIVE HEART FAILURE, post-MYOCARDIAL INFARCTION.
+</str>
+<date name="DateCreated">2018-07-09T00:00:00Z</date>
+<str name="id">04d1c7bc-1c37-47ba-a993-297cd216f008</str>
+<long name="_version_">1661355677700849664</long>
+</doc>
+<doc>
+<str name="DescriptorUI">D000077545</str>
+<arr name="ConceptName">
+<str>Eplerenone</str>
+<str>Inspra</str>
+<str>
+9,11-Epoxy-7-(methoxycarbonyl)-3-oxo-17-pregn-4-ene-21,17-carbolactone
+</str>
+</arr>
+<arr name="ConceptUI">
+<str>M0371594</str>
+<str>M0439953</str>
+<str>M000640866</str>
+</arr>
+<arr name="EntryTerm">
+<str>Eplerenone</str>
+<str>Eplerenon</str>
+<str>Inspra</str>
+<str>
+9,11-Epoxy-7-(methoxycarbonyl)-3-oxo-17-pregn-4-ene-21,17-carbolactone
+</str>
+</arr>
+<str name="ScopeNote">
+A spironolactone derivative and selective ALDOSTERONE RECEPTOR antagonist that is used in the management of HYPERTENSION and CONGESTIVE HEART FAILURE, post-MYOCARDIAL INFARCTION.
+</str>
+<date name="DateCreated">2018-07-09T00:00:00Z</date>
+<str name="id">52c2f1f9-97d4-4d6a-b4fa-554dd96f9c68</str>
+<long name="_version_">1661358162591088640</long>
+</doc>
+</result>
+</response>

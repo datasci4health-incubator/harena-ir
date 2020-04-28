@@ -1,0 +1,178 @@
+<add>
+  <doc>
+    <field name="DescriptorUI">D000071956</field>
+    <field name="ConceptName" boost="9.8">Myocardial Contusions</field>
+    <field name="ConceptName" boost="9.8">Blunt Cardiac Injury</field>
+    <field name="ConceptUI">M000616110</field>
+    <field name="ConceptUI">M000616118</field>
+    <field name="EntryTerm">Myocardial Contusions</field>
+    <field name="EntryTerm">Contusion, Myocardial</field>
+    <field name="EntryTerm">Contusions, Myocardial</field>
+    <field name="EntryTerm">Myocardial Contusion</field>
+    <field name="EntryTerm">Cardiac Contusion</field>
+    <field name="EntryTerm">Cardiac Contusions</field>
+    <field name="EntryTerm">Contusion, Cardiac</field>
+    <field name="EntryTerm">Contusions, Cardiac</field>
+    <field name="EntryTerm">Heart Contusions</field>
+    <field name="EntryTerm">Contusion, Heart</field>
+    <field name="EntryTerm">Contusions, Heart</field>
+    <field name="EntryTerm">Heart Contusion</field>
+    <field name="EntryTerm">Contusio Cordis</field>
+    <field name="EntryTerm">Cordis, Contusio</field>
+    <field name="EntryTerm">Blunt Cardiac Injury</field>
+    <field name="EntryTerm">Blunt Cardiac Injuries</field>
+    <field name="EntryTerm">Cardiac Injuries, Blunt</field>
+    <field name="EntryTerm">Cardiac Injury, Blunt</field>
+    <field name="EntryTerm">Injuries, Blunt Cardiac</field>
+    <field name="EntryTerm">Injury, Blunt Cardiac</field>
+    <field name="PreviousIndexing">Heart Injuries (1964-2016)</field>
+    <field name="Annotation"/>
+    <field name="ScopeNote">Bruise to the heart muscle due to blunt thoracic trauma.</field>
+    <field name="DateCreated">2016-07-05</field>
+  </doc>
+  <doc>
+    <field name="DescriptorUI">D006342</field>
+    <field name="ConceptName" boost="9.8">Heart Rupture, Post-Infarction</field>
+    <field name="ConceptUI">M0009963</field>
+    <field name="EntryTerm">Heart Rupture, Post-Infarction</field>
+    <field name="EntryTerm">Heart Rupture, Post Infarction</field>
+    <field name="EntryTerm">Post-Infarction Heart Rupture</field>
+    <field name="EntryTerm">Heart Ruptures, Post-Infarction</field>
+    <field name="EntryTerm">Post Infarction Heart Rupture</field>
+    <field name="EntryTerm">Post-Infarction Heart Ruptures</field>
+    <field name="EntryTerm">Rupture, Post-Infarction Heart</field>
+    <field name="EntryTerm">Ruptures, Post-Infarction Heart</field>
+    <field name="EntryTerm">Cardiac Rupture, Post-Infarction</field>
+    <field name="EntryTerm">Cardiac Rupture, Post Infarction</field>
+    <field name="EntryTerm">Cardiac Ruptures, Post-Infarction</field>
+    <field name="EntryTerm">Post-Infarction Cardiac Rupture</field>
+    <field name="EntryTerm">Post-Infarction Cardiac Ruptures</field>
+    <field name="EntryTerm">Rupture, Post-Infarction Cardiac</field>
+    <field name="EntryTerm">Ruptures, Post-Infarction Cardiac</field>
+    <field name="PreviousIndexing">Heart Rupture (1978-1986)</field>
+    <field name="PreviousIndexing">Myocardial Infarction (1979-1986)</field>
+    <field name="Annotation">do not coordinate with MYOCARDIAL INFARCTION unless specifically discussed</field>
+    <field name="ScopeNote">Laceration or tearing of cardiac tissues appearing after MYOCARDIAL INFARCTION.</field>
+    <field name="DateCreated">1986-06-24</field>
+  </doc>
+  <doc>
+    <field name="DescriptorUI">D006343</field>
+    <field name="ConceptName" boost="9.8">Heart Septal Defects</field>
+    <field name="ConceptUI">M0009964</field>
+    <field name="EntryTerm">Heart Septal Defects</field>
+    <field name="EntryTerm">Defect, Heart Septal</field>
+    <field name="EntryTerm">Defects, Heart Septal</field>
+    <field name="EntryTerm">Heart Septal Defect</field>
+    <field name="EntryTerm">Septal Defect, Heart</field>
+    <field name="EntryTerm">Septal Defects, Heart</field>
+    <field name="EntryTerm">Cardiac Septal Defects</field>
+    <field name="Annotation">general or unspecified; prefer specifics</field>
+    <field name="ScopeNote">Abnormalities in any part of the HEART SEPTUM resulting in abnormal communication between the left and the right chambers of the heart. The abnormal blood flow inside the heart may be caused by defects in the ATRIAL SEPTUM, the VENTRICULAR SEPTUM, or both.</field>
+    <field name="DateCreated">1999-01-01</field>
+  </doc>
+  <doc>
+    <field name="DescriptorUI">D000077785</field>
+    <field name="ConceptName" boost="9.8">Tenecteplase</field>
+    <field name="ConceptName" boost="9.8">Metalyse</field>
+    <field name="ConceptName" boost="9.8">TNKase</field>
+    <field name="ConceptUI">M0335155</field>
+    <field name="ConceptUI">M0476108</field>
+    <field name="ConceptUI">M0476109</field>
+    <field name="EntryTerm">Tenecteplase</field>
+    <field name="EntryTerm">Metalyse</field>
+    <field name="EntryTerm">TNKase</field>
+    <field name="Annotation"/>
+    <field name="ScopeNote">A tissue plasminogen activator enzyme that acts as a fibrinolytic agent; it is used for the dissolution of blood clots, such as those that occur in acute MYOCARDIAL INFARCTION.</field>
+    <field name="DateCreated">2018-07-09</field>
+  </doc>
+  <doc>
+    <field name="DescriptorUI">D054058</field>
+    <field name="ConceptName" boost="9.8">Acute Coronary Syndrome</field>
+    <field name="ConceptUI">M0500631</field>
+    <field name="EntryTerm">Acute Coronary Syndrome</field>
+    <field name="EntryTerm">Acute Coronary Syndromes</field>
+    <field name="EntryTerm">Coronary Syndrome, Acute</field>
+    <field name="EntryTerm">Coronary Syndromes, Acute</field>
+    <field name="EntryTerm">Syndrome, Acute Coronary</field>
+    <field name="EntryTerm">Syndromes, Acute Coronary</field>
+    <field name="Annotation"/>
+    <field name="ScopeNote">An episode of MYOCARDIAL ISCHEMIA that generally lasts longer than a transient anginal episode that ultimately may lead to MYOCARDIAL INFARCTION.</field>
+    <field name="DateCreated">2007-07-09</field>
+  </doc>
+  <doc>
+    <field name="DescriptorUI">D003328</field>
+    <field name="ConceptName" boost="9.8">Coronary Thrombosis</field>
+    <field name="ConceptUI">M0005194</field>
+    <field name="EntryTerm">Coronary Thrombosis</field>
+    <field name="EntryTerm">Thrombosis, Coronary</field>
+    <field name="EntryTerm">Coronary Thromboses</field>
+    <field name="EntryTerm">Thromboses, Coronary</field>
+    <field name="PreviousIndexing">Coronary Disease (1966-1986)</field>
+    <field name="Annotation">do not confuse "mural thrombus" with "coronary thrombosis": index under HEART DISEASES + THROMBOSIS</field>
+    <field name="ScopeNote">Coagulation of blood in any of the CORONARY VESSELS. The presence of a blood clot (THROMBUS) often leads to MYOCARDIAL INFARCTION.</field>
+    <field name="DateCreated">1986-03-27</field>
+  </doc>
+  <doc>
+    <field name="DescriptorUI">D000077545</field>
+    <field name="ConceptName" boost="9.8">Eplerenone</field>
+    <field name="ConceptName" boost="9.8">Inspra</field>
+    <field name="ConceptName" boost="9.8">9,11-Epoxy-7-(methoxycarbonyl)-3-oxo-17-pregn-4-ene-21,17-carbolactone</field>
+    <field name="ConceptUI">M0371594</field>
+    <field name="ConceptUI">M0439953</field>
+    <field name="ConceptUI">M000640866</field>
+    <field name="EntryTerm">Eplerenone</field>
+    <field name="EntryTerm">Eplerenon</field>
+    <field name="EntryTerm">Inspra</field>
+    <field name="EntryTerm">9,11-Epoxy-7-(methoxycarbonyl)-3-oxo-17-pregn-4-ene-21,17-carbolactone</field>
+    <field name="Annotation"/>
+    <field name="ScopeNote">A spironolactone derivative and selective ALDOSTERONE RECEPTOR antagonist that is used in the management of HYPERTENSION and CONGESTIVE HEART FAILURE, post-MYOCARDIAL INFARCTION.</field>
+    <field name="DateCreated">2018-07-09</field>
+  </doc>
+  <doc>
+    <field name="DescriptorUI">D000077546</field>
+    <field name="ConceptName" boost="9.8">Roscovitine</field>
+    <field name="ConceptName" boost="9.8">2-(1-Ethyl-2-hydroxyethylamino)-6-benzylamino-9-isopropylpurine</field>
+    <field name="ConceptName" boost="9.8">CYC 202</field>
+    <field name="ConceptName" boost="9.8">R-roscovitine</field>
+    <field name="ConceptName" boost="9.8">Seliciclib</field>
+    <field name="ConceptUI">M0273114</field>
+    <field name="ConceptUI">M000640881</field>
+    <field name="ConceptUI">M0462906</field>
+    <field name="ConceptUI">M0489548</field>
+    <field name="ConceptUI">M0489549</field>
+    <field name="EntryTerm">Roscovitine</field>
+    <field name="EntryTerm">(2R)-2-((6-Benzylamino-9-(propan-2-yl)-9H-purin-2-yl)amino)butan-1-ol</field>
+    <field name="EntryTerm">2-(1-Ethyl-2-hydroxyethylamino)-6-benzylamino-9-isopropylpurine</field>
+    <field name="EntryTerm">CYC 202</field>
+    <field name="EntryTerm">CYC202</field>
+    <field name="EntryTerm">CYC-202</field>
+    <field name="EntryTerm">R-roscovitine</field>
+    <field name="EntryTerm">R roscovitine</field>
+    <field name="EntryTerm">Seliciclib</field>
+    <field name="Annotation"/>
+    <field name="ScopeNote">A purine derivative and competitive inhibitor of CYCLIN-DEPENDENT KINASES that has therapeutic potential as an antineoplastic and antiviral agent.</field>
+    <field name="DateCreated">2018-07-09</field>
+  </doc>
+  <doc>
+    <field name="DescriptorUI">D009203</field>
+    <field name="ConceptName" boost="9.8">Myocardial Infarction</field>
+    <field name="ConceptUI">M0014340</field>
+    <field name="EntryTerm">Myocardial Infarction</field>
+    <field name="EntryTerm">Infarction, Myocardial</field>
+    <field name="EntryTerm">Infarctions, Myocardial</field>
+    <field name="EntryTerm">Myocardial Infarctions</field>
+    <field name="EntryTerm">Cardiovascular Stroke</field>
+    <field name="EntryTerm">Cardiovascular Strokes</field>
+    <field name="EntryTerm">Stroke, Cardiovascular</field>
+    <field name="EntryTerm">Strokes, Cardiovascular</field>
+    <field name="EntryTerm">Myocardial Infarct</field>
+    <field name="EntryTerm">Infarct, Myocardial</field>
+    <field name="EntryTerm">Infarcts, Myocardial</field>
+    <field name="EntryTerm">Myocardial Infarcts</field>
+    <field name="EntryTerm">Heart Attack</field>
+    <field name="EntryTerm">Heart Attacks</field>
+    <field name="Annotation">do not coordinate with ACUTE DISEASE for "acute infarct"</field>
+    <field name="ScopeNote">NECROSIS of the MYOCARDIUM caused by an obstruction of the blood supply to the heart (CORONARY CIRCULATION).</field>
+    <field name="DateCreated">1999-01-01</field>
+  </doc>
+</add>

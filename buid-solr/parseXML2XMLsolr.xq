@@ -1,4 +1,4 @@
-let $mesh := doc("/home/enzo/Documentos/Docker/desc2020.xml")
+let $mesh := doc("/home/enzo/Documentos/Docker/bar.xml")
 
 return
 <add>
@@ -10,7 +10,7 @@ return
      {
        for $cn in ($d//ConceptName)
        return
-       <field name="ConceptName" boost="8.0">{$cn/String/text()}</field>
+       <field name="ConceptName" boost="0.5">{$cn/String/text()}</field>
      }
      
      {
@@ -22,18 +22,18 @@ return
      {
        for $tl in ($d//TermList/Term)
          return
-         <field name="EntryTerm" boost="4.0">{$tl//String/text()}</field>
+         <field name="EntryTerm" >{$tl//String/text()}</field>
      }
      
      {
        for $pi in ($d//PreviousIndexing)
        return
-       <field name="PreviousIndexing" boost="4.0">{$pi/text()}</field>
+       <field name="PreviousIndexing">{$pi/text()}</field>
      }
      
-     <field name="Annotation" boost="2.0">{$d//Annotation/text()}</field>
+     <field name="Annotation">{$d//Annotation/text()}</field>
      
-     <field name="ScopeNote" boost="2.0">{$d//ScopeNote/text()}</field>
+     <field name="ScopeNote">{$d//ScopeNote/text()}</field>
      <field name="DateCreated">{$d/DateCreated/Year/text()}-{$d/DateCreated/Month/text()}-{$d/DateCreated/Day/text()}</field>
      
   </doc>

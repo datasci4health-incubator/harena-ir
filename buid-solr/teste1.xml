@@ -1,0 +1,171 @@
+
+c>
+    <field name="DescriptorUI">D000001</field>
+    <field name="ConceptName">Calcimycin</field>
+    <field name="ConceptName">A-23187</field>
+    <field name="ConceptUI">M0000001</field>
+    <field name="ConceptUI">M0353609</field>
+    <field name="EntryTerm">Calcimycin</field>
+    <field name="EntryTerm">A-23187</field>
+    <field name="EntryTerm">A 23187</field>
+    <field name="EntryTerm">A23187</field>
+    <field name="EntryTerm">Antibiotic A23187</field>
+    <field name="EntryTerm">A23187, Antibiotic</field>
+    <field name="PreviousIndexing">Antibiotics (1973-1974)</field>
+    <field name="PreviousIndexing">Carboxylic Acids (1973-1974)</field>
+    <field name="Annotation"/>
+    <field name="ScopeNote">An ionophorous, polyether antibiotic from Streptomyces chartreusensis. It binds and transports CALCIUM and other divalent cations across membranes and uncouples oxidative phosphorylation while inhibiting ATPase of rat liver mitochondria. The substance is used mostly as a biochemical tool to study the role of divalent cations in various biological systems.</field>
+    <field name="DateCreated">1974-11-19</field>
+  </doc>
+  <doc>
+    <field name="DescriptorUI">D000002</field>
+    <field name="ConceptName">Temefos</field>
+    <field name="ConceptName">Abate</field>
+    <field name="ConceptName">Difos</field>
+    <field name="ConceptUI">M0000002</field>
+    <field name="ConceptUI">M0352201</field>
+    <field name="ConceptUI">M0352200</field>
+    <field name="EntryTerm">Temefos</field>
+    <field name="EntryTerm">Temephos</field>
+    <field name="EntryTerm">Abate</field>
+    <field name="EntryTerm">Difos</field>
+    <field name="PreviousIndexing">Insecticides (1966-1971)</field>
+    <field name="Annotation">for use to kill or control insects, use no qualifiers on the insecticide or the insect; appropriate qualifiers may be used when other aspects of the insecticide are discussed such as the effect on a physiologic process or behavioral aspect of the insect; for poisoning, coordinate with ORGANOPHOSPHATE POISONING</field>
+    <field name="ScopeNote">An organothiophosphate insecticide.</field>
+    <field name="DateCreated">1999-01-01</field>
+  </doc>
+  <doc>
+    <field name="DescriptorUI">D000003</field>
+    <field name="ConceptName">Abattoirs</field>
+    <field name="ConceptUI">M0000003</field>
+    <field name="EntryTerm">Abattoirs</field>
+    <field name="EntryTerm">Abattoir</field>
+    <field name="EntryTerm">Slaughter Houses</field>
+    <field name="EntryTerm">House, Slaughter</field>
+    <field name="EntryTerm">Houses, Slaughter</field>
+    <field name="EntryTerm">Slaughter House</field>
+    <field name="EntryTerm">Slaughterhouses</field>
+    <field name="EntryTerm">Slaughterhouse</field>
+    <field name="Annotation"/>
+    <field name="ScopeNote">Places where animals are slaughtered and dressed for market.</field>
+    <field name="DateCreated">1999-01-01</field>
+  </doc>
+  <doc>
+    <field name="DescriptorUI">D000004</field>
+    <field name="ConceptName">Abbreviations as Topic</field>
+    <field name="ConceptName">Acronyms as Topic</field>
+    <field name="ConceptUI">M0000004</field>
+    <field name="ConceptUI">M0511063</field>
+    <field name="EntryTerm">Abbreviations as Topic</field>
+    <field name="EntryTerm">Acronyms as Topic</field>
+    <field name="Annotation">includes acronyms; do not confuse with Publication Type ABBREVIATIONS</field>
+    <field name="ScopeNote">Works about shortened forms of written words or phrases used for brevity.</field>
+    <field name="DateCreated">1999-01-01</field>
+  </doc>
+  <doc>
+    <field name="DescriptorUI">D000005</field>
+    <field name="ConceptName">Abdomen</field>
+    <field name="ConceptUI">M0000005</field>
+    <field name="EntryTerm">Abdomen</field>
+    <field name="EntryTerm">Abdomens</field>
+    <field name="Annotation">GEN: prefer specifics; abdom muscles = ABDOMINAL MUSCLES but RECTUS ABDOMINIS is available; abdominal pain = ABDOMINAL PAIN; abrupt dis requiring emerg surg = ABDOMEN, ACUTE</field>
+    <field name="ScopeNote">That portion of the body that lies between the THORAX and the PELVIS.</field>
+    <field name="DateCreated">1999-01-01</field>
+  </doc>
+  <doc>
+    <field name="DescriptorUI">D000006</field>
+    <field name="ConceptName">Abdomen, Acute</field>
+    <field name="ConceptUI">M0000006</field>
+    <field name="EntryTerm">Abdomen, Acute</field>
+    <field name="EntryTerm">Abdomens, Acute</field>
+    <field name="EntryTerm">Acute Abdomen</field>
+    <field name="EntryTerm">Acute Abdomens</field>
+    <field name="Annotation"/>
+    <field name="ScopeNote">A clinical syndrome with acute abdominal pain that is severe, localized, and rapid in onset. Acute abdomen may be caused by a variety of disorders, injuries, or diseases.</field>
+    <field name="DateCreated">1999-01-01</field>
+  </doc><add>
+  <doc>
+    <field name="DescriptorUI">D000001</field>
+    <field name="ConceptName">Calcimycin</field>
+    <field name="ConceptName">A-23187</field>
+    <field name="ConceptUI">M0000001</field>
+    <field name="ConceptUI">M0353609</field>
+    <field name="EntryTerm">Calcimycin</field>
+    <field name="EntryTerm">A-23187</field>
+    <field name="EntryTerm">A 23187</field>
+    <field name="EntryTerm">A23187</field>
+    <field name="EntryTerm">Antibiotic A23187</field>
+    <field name="EntryTerm">A23187, Antibiotic</field>
+    <field name="PreviousIndexing">Antibiotics (1973-1974)</field>
+    <field name="PreviousIndexing">Carboxylic Acids (1973-1974)</field>
+    <field name="Annotation"/>
+    <field name="ScopeNote">An ionophorous, polyether antibiotic from Streptomyces chartreusensis. It binds and transports CALCIUM and other divalent cations across membranes and uncouples oxidative phosphorylation while inhibiting ATPase of rat liver mitochondria. The substance is used mostly as a biochemical tool to study the role of divalent cations in various biological systems.</field>
+    <field name="DateCreated">1974-11-19</field>
+  </doc>
+  <doc>
+    <field name="DescriptorUI">D000002</field>
+    <field name="ConceptName">Temefos</field>
+    <field name="ConceptName">Abate</field>
+    <field name="ConceptName">Difos</field>
+    <field name="ConceptUI">M0000002</field>
+    <field name="ConceptUI">M0352201</field>
+    <field name="ConceptUI">M0352200</field>
+    <field name="EntryTerm">Temefos</field>
+    <field name="EntryTerm">Temephos</field>
+    <field name="EntryTerm">Abate</field>
+    <field name="EntryTerm">Difos</field>
+    <field name="PreviousIndexing">Insecticides (1966-1971)</field>
+    <field name="Annotation">for use to kill or control insects, use no qualifiers on the insecticide or the insect; appropriate qualifiers may be used when other aspects of the insecticide are discussed such as the effect on a physiologic process or behavioral aspect of the insect; for poisoning, coordinate with ORGANOPHOSPHATE POISONING</field>
+    <field name="ScopeNote">An organothiophosphate insecticide.</field>
+    <field name="DateCreated">1999-01-01</field>
+  </doc>
+  <doc>
+    <field name="DescriptorUI">D000003</field>
+    <field name="ConceptName">Abattoirs</field>
+    <field name="ConceptUI">M0000003</field>
+    <field name="EntryTerm">Abattoirs</field>
+    <field name="EntryTerm">Abattoir</field>
+    <field name="EntryTerm">Slaughter Houses</field>
+    <field name="EntryTerm">House, Slaughter</field>
+    <field name="EntryTerm">Houses, Slaughter</field>
+    <field name="EntryTerm">Slaughter House</field>
+    <field name="EntryTerm">Slaughterhouses</field>
+    <field name="EntryTerm">Slaughterhouse</field>
+    <field name="Annotation"/>
+    <field name="ScopeNote">Places where animals are slaughtered and dressed for market.</field>
+    <field name="DateCreated">1999-01-01</field>
+  </doc>
+  <doc>
+    <field name="DescriptorUI">D000004</field>
+    <field name="ConceptName">Abbreviations as Topic</field>
+    <field name="ConceptName">Acronyms as Topic</field>
+    <field name="ConceptUI">M0000004</field>
+    <field name="ConceptUI">M0511063</field>
+    <field name="EntryTerm">Abbreviations as Topic</field>
+    <field name="EntryTerm">Acronyms as Topic</field>
+    <field name="Annotation">includes acronyms; do not confuse with Publication Type ABBREVIATIONS</field>
+    <field name="ScopeNote">Works about shortened forms of written words or phrases used for brevity.</field>
+    <field name="DateCreated">1999-01-01</field>
+  </doc>
+  <doc>
+    <field name="DescriptorUI">D000005</field>
+    <field name="ConceptName">Abdomen</field>
+    <field name="ConceptUI">M0000005</field>
+    <field name="EntryTerm">Abdomen</field>
+    <field name="EntryTerm">Abdomens</field>
+    <field name="Annotation">GEN: prefer specifics; abdom muscles = ABDOMINAL MUSCLES but RECTUS ABDOMINIS is available; abdominal pain = ABDOMINAL PAIN; abrupt dis requiring emerg surg = ABDOMEN, ACUTE</field>
+    <field name="ScopeNote">That portion of the body that lies between the THORAX and the PELVIS.</field>
+    <field name="DateCreated">1999-01-01</field>
+  </doc>
+  <doc>
+    <field name="DescriptorUI">D000006</field>
+    <field name="ConceptName">Abdomen, Acute</field>
+    <field name="ConceptUI">M0000006</field>
+    <field name="EntryTerm">Abdomen, Acute</field>
+    <field name="EntryTerm">Abdomens, Acute</field>
+    <field name="EntryTerm">Acute Abdomen</field>
+    <field name="EntryTerm">Acute Abdomens</field>
+    <field name="Annotation"/>
+    <field name="ScopeNote">A clinical syndrome with acute abdominal pain that is severe, localized, and rapid in onset. Acute abdomen may be caused by a variety of disorders, injuries, or diseases.</field>
+    <field name="DateCreated">1999-01-01</field>
+  </doc>i

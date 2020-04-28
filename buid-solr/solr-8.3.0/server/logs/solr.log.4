@@ -1,67 +1,742 @@
-2019-12-06 13:07:25.800 INFO  (main) [   ] o.e.j.u.log Logging initialized @17482ms to org.eclipse.jetty.util.log.Slf4jLog
-2019-12-06 13:07:27.443 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.rewrite.handler.RedirectRegexRule.setReplacement(java.lang.String) in file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/etc/jetty.xml
-2019-12-06 13:07:30.842 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
-2019-12-06 13:07:30.842 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/etc/jetty-http.xml
-2019-12-06 13:07:30.915 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 1.8.0_221-b11
-2019-12-06 13:07:31.110 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/contexts/] at interval 0
-2019-12-06 13:07:34.902 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2019-12-06 13:07:34.944 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2019-12-06 13:07:34.944 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2019-12-06 13:07:34.970 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2019-12-06 13:07:36.551 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2019-12-06 13:07:36.612 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.3.0
-2019-12-06 13:07:36.612 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2019-12-06 13:07:36.612 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0
-2019-12-06 13:07:36.613 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-12-06T13:07:36.613Z
-2019-12-06 13:07:36.980 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr
-2019-12-06 13:07:37.023 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/solr.xml
-2019-12-06 13:07:37.609 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3, but no JMX reporters were configured - adding default JMX reporter.
-2019-12-06 13:07:38.976 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2019-12-06 13:07:40.233 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@2f40e5db[provider=null,keyStore=null,trustStore=null]
-2019-12-06 13:07:40.234 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@2f40e5db[provider=null,keyStore=null,trustStore=null]
-2019-12-06 13:07:41.328 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@78365cfa[provider=null,keyStore=null,trustStore=null]
-2019-12-06 13:07:41.329 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@78365cfa[provider=null,keyStore=null,trustStore=null]
-2019-12-06 13:07:42.185 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2019-12-06 13:07:42.203 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2019-12-06 13:07:42.789 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-12-06 13:07:42.791 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-12-06 13:07:42.837 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-12-06 13:07:43.254 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr
-2019-12-06 13:07:43.256 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [mesh]
-2019-12-06 13:07:43.642 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@15bbf42f{/solr,file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr-webapp/webapp/,AVAILABLE}{/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr-webapp/webapp}
-2019-12-06 13:07:43.706 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@fbd1f6{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2019-12-06 13:07:43.712 INFO  (main) [   ] o.e.j.s.Server Started @35393ms
-2019-12-06 13:07:43.714 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrResourceLoader [mesh] Added 61 libs to classloader, from paths: [/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/clustering/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/extraction/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/langid/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/velocity/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/dist]
-2019-12-06 13:07:49.211 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.3.0
-2019-12-06 13:07:51.027 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.IndexSchema [mesh] Schema name=default-config
-2019-12-06 13:08:01.043 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2019-12-06 13:08:01.134 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.CoreContainer Creating SolrCore 'mesh' using configuration from instancedir /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh, trusted=true
-2019-12-06 13:08:01.320 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.mesh' (registry 'solr.core.mesh') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-12-06 13:08:01.396 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrCore [[mesh] ] Opening new SolrCore at [/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh], dataDir=[/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh/data/]
-2019-12-06 13:08:01.638 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2019-12-06 13:08:03.336 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2019-12-06 13:08:03.336 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2019-12-06 13:08:03.410 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2019-12-06 13:08:03.410 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2019-12-06 13:08:04.042 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.SolrIndexSearcher Opening [Searcher@5d1568a8[mesh] main]
-2019-12-06 13:08:04.086 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh/conf
-2019-12-06 13:08:04.186 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2019-12-06 13:08:04.225 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2019-12-06 13:08:04.282 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2019-12-06 13:08:04.402 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5d1568a8[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.3.0):C29640:[diagnostics={java.vendor=Oracle Corporation, os=Linux, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-72-generic, timestamp=1575571330836}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-12-06 13:08:04.402 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-12-06 13:08:04.402 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2019-12-06 13:08:04.437 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.SolrCore [mesh] Registered new searcher Searcher@5d1568a8[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.3.0):C29640:[diagnostics={java.vendor=Oracle Corporation, os=Linux, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-72-generic, timestamp=1575571330836}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-12-06 13:08:10.067 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@fbd1f6{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2019-12-06 13:08:10.068 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2019-12-06 13:08:10.077 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1076984738
-2019-12-06 13:08:10.088 INFO  (coreCloseExecutor-15-thread-1) [   x:mesh] o.a.s.c.SolrCore [mesh]  CLOSING SolrCore org.apache.solr.core.SolrCore@53e2472c
-2019-12-06 13:08:10.088 INFO  (coreCloseExecutor-15-thread-1) [   x:mesh] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.mesh, tag=SolrCore@53e2472c
-2019-12-06 13:08:10.090 INFO  (coreCloseExecutor-15-thread-1) [   x:mesh] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@144e791f: rootName = null, domain = solr.core.mesh, service url = null, agent id = null] for registry solr.core.mesh / com.codahale.metrics.MetricRegistry@2ad992f8
-2019-12-06 13:08:10.430 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2019-12-06 13:08:10.431 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@79e18e38: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@fc2685a
-2019-12-06 13:08:10.450 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2019-12-06 13:08:10.450 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@224b4d61: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@1ee893e9
-2019-12-06 13:08:10.455 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2019-12-06 13:08:10.461 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5d5d9e5: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@5144ca3c
-2019-12-06 13:08:10.610 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@15bbf42f{/solr,null,UNAVAILABLE}{/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr-webapp/webapp}
+2020-03-25 11:28:54.410 INFO  (main) [   ] o.e.j.u.log Logging initialized @2852ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-03-25 11:28:54.720 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.rewrite.handler.RedirectRegexRule.setReplacement(java.lang.String) in file:///home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/etc/jetty.xml
+2020-03-25 11:28:54.866 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2020-03-25 11:28:54.866 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/etc/jetty-http.xml
+2020-03-25 11:28:54.877 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 1.8.0_221-b11
+2020-03-25 11:28:54.932 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/contexts/] at interval 0
+2020-03-25 11:28:55.707 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-03-25 11:28:55.763 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-03-25 11:28:55.764 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-03-25 11:28:55.771 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2020-03-25 11:28:55.988 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-03-25 11:28:55.996 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.3.0
+2020-03-25 11:28:55.998 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-03-25 11:28:55.999 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0
+2020-03-25 11:28:56.001 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-03-25T11:28:56.001Z
+2020-03-25 11:28:56.098 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr
+2020-03-25 11:28:56.112 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/solr.xml
+2020-03-25 11:28:56.359 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3, but no JMX reporters were configured - adding default JMX reporter.
+2020-03-25 11:28:57.462 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-03-25 11:28:58.260 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@2f40e5db[provider=null,keyStore=null,trustStore=null]
+2020-03-25 11:28:58.260 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@2f40e5db[provider=null,keyStore=null,trustStore=null]
+2020-03-25 11:28:58.699 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@78365cfa[provider=null,keyStore=null,trustStore=null]
+2020-03-25 11:28:58.699 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@78365cfa[provider=null,keyStore=null,trustStore=null]
+2020-03-25 11:28:59.313 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-03-25 11:28:59.317 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-03-25 11:28:59.571 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2020-03-25 11:28:59.603 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2020-03-25 11:28:59.630 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2020-03-25 11:28:59.775 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr
+2020-03-25 11:28:59.782 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [mesh]
+2020-03-25 11:29:00.014 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrResourceLoader [mesh] Added 61 libs to classloader, from paths: [/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/clustering/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/extraction/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/langid/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/velocity/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/dist]
+2020-03-25 11:29:00.037 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@15bbf42f{/solr,file:///home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr-webapp/webapp/,AVAILABLE}{/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr-webapp/webapp}
+2020-03-25 11:29:00.107 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@fbd1f6{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-03-25 11:29:00.107 INFO  (main) [   ] o.e.j.s.Server Started @8557ms
+2020-03-25 11:29:00.755 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.3.0
+2020-03-25 11:29:01.292 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.IndexSchema [mesh] Schema name=default-config
+2020-03-25 11:29:02.611 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-03-25 11:29:02.759 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.CoreContainer Creating SolrCore 'mesh' using configuration from instancedir /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh, trusted=true
+2020-03-25 11:29:02.845 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.mesh' (registry 'solr.core.mesh') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2020-03-25 11:29:02.877 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrCore [[mesh] ] Opening new SolrCore at [/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh], dataDir=[/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh/data/]
+2020-03-25 11:29:03.001 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-03-25 11:29:04.422 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-03-25 11:29:04.423 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-03-25 11:29:04.453 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-03-25 11:29:04.453 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-03-25 11:29:04.644 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.SolrIndexSearcher Opening [Searcher@45a2839[mesh] main]
+2020-03-25 11:29:04.665 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh/conf
+2020-03-25 11:29:04.734 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-03-25 11:29:04.749 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-03-25 11:29:04.778 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-03-25 11:29:04.786 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1662135298724724736
+2020-03-25 11:29:04.793 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@45a2839[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-03-25 11:29:04.794 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-03-25 11:29:04.794 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-03-25 11:29:04.823 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.SolrCore [mesh] Registered new searcher Searcher@45a2839[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-03-25 11:29:14.656 WARN  (qtp153245266-17) [   x:mesh] o.a.s.h.l.XMLLoader Ignoring field boost: 0.5 as index-time boosts are not supported anymore
+2020-03-25 11:29:14.906 INFO  (qtp153245266-17) [   x:mesh] o.a.s.u.p.LogUpdateProcessorFactory [mesh]  webapp=/solr path=/update params={}{add=[c167bd43-b061-4560-a21f-a182fd9b44ec (1662135309097238528), 4705f408-7ad6-4225-8a61-8a3514865818 (1662135309269204992), d2418c12-a8b3-4ba7-898e-42ddd75cdf93 (1662135309285982208), 9cd98eea-35a6-4ca0-9a35-8ff99547bdad (1662135309293322240), 8e8bd137-cdf0-4695-a03f-f76ce50836cd (1662135309299613696), d7c982ce-2e35-433a-87e6-a3303ea42a2d (1662135309304856576), dd0c3266-6568-4d94-8309-f57142e44bcb (1662135309311148032), 95246b8b-3ae3-4b50-af95-407bf89c7a1e (1662135309319536640), 81877791-5df4-4f49-bd2d-52650bbe03b7 (1662135309328973824)]} 0 518
+2020-03-25 11:29:14.943 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1662135309374062592,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-03-25 11:29:14.946 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@3684a49b commitCommandVersion:1662135309374062592
+2020-03-25 11:29:15.970 INFO  (qtp153245266-13) [   x:mesh] o.a.s.s.SolrIndexSearcher Opening [Searcher@f70c7cc[mesh] main]
+2020-03-25 11:29:15.975 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-03-25 11:29:15.976 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@f70c7cc[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.3.0):C9:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-91-generic, timestamp=1585135755150}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-03-25 11:29:15.977 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-03-25 11:29:15.994 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.SolrCore [mesh] Registered new searcher Searcher@f70c7cc[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.3.0):C9:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-91-generic, timestamp=1585135755150}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-03-25 11:29:16.005 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.p.LogUpdateProcessorFactory [mesh]  webapp=/solr path=/update params={commit=true}{commit=} 0 1064
+2020-03-25 11:34:34.435 INFO  (qtp153245266-15) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&defType=dismax&wt=json} hits=5 status=0 QTime=294
+2020-03-25 11:35:30.295 ERROR (qtp153245266-22) [   x:mesh] o.a.s.h.RequestHandlerBase java.lang.UnsupportedOperationException
+	at org.apache.lucene.queries.function.FunctionValues.floatVal(FunctionValues.java:47)
+	at org.apache.lucene.queries.function.FunctionQuery$AllScorer.score(FunctionQuery.java:125)
+	at org.apache.lucene.search.ReqOptSumScorer.score(ReqOptSumScorer.java:266)
+	at org.apache.lucene.search.TopScoreDocCollector$SimpleTopScoreDocCollector$1.collect(TopScoreDocCollector.java:69)
+	at org.apache.lucene.search.Weight$DefaultBulkScorer.scoreAll(Weight.java:275)
+	at org.apache.lucene.search.Weight$DefaultBulkScorer.score(Weight.java:218)
+	at org.apache.lucene.search.BulkScorer.score(BulkScorer.java:39)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:656)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:442)
+	at org.apache.solr.search.SolrIndexSearcher.buildAndRunCollectorChain(SolrIndexSearcher.java:203)
+	at org.apache.solr.search.SolrIndexSearcher.getDocListNC(SolrIndexSearcher.java:1617)
+	at org.apache.solr.search.SolrIndexSearcher.getDocListC(SolrIndexSearcher.java:1433)
+	at org.apache.solr.search.SolrIndexSearcher.search(SolrIndexSearcher.java:580)
+	at org.apache.solr.handler.component.QueryComponent.doProcessUngroupedSearch(QueryComponent.java:1485)
+	at org.apache.solr.handler.component.QueryComponent.process(QueryComponent.java:398)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:305)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-03-25 11:35:30.297 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&defType=dismax&bf="ConceptName"^2&wt=json} status=500 QTime=49
+2020-03-25 11:35:30.300 ERROR (qtp153245266-22) [   x:mesh] o.a.s.s.HttpSolrCall null:java.lang.UnsupportedOperationException
+	at org.apache.lucene.queries.function.FunctionValues.floatVal(FunctionValues.java:47)
+	at org.apache.lucene.queries.function.FunctionQuery$AllScorer.score(FunctionQuery.java:125)
+	at org.apache.lucene.search.ReqOptSumScorer.score(ReqOptSumScorer.java:266)
+	at org.apache.lucene.search.TopScoreDocCollector$SimpleTopScoreDocCollector$1.collect(TopScoreDocCollector.java:69)
+	at org.apache.lucene.search.Weight$DefaultBulkScorer.scoreAll(Weight.java:275)
+	at org.apache.lucene.search.Weight$DefaultBulkScorer.score(Weight.java:218)
+	at org.apache.lucene.search.BulkScorer.score(BulkScorer.java:39)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:656)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:442)
+	at org.apache.solr.search.SolrIndexSearcher.buildAndRunCollectorChain(SolrIndexSearcher.java:203)
+	at org.apache.solr.search.SolrIndexSearcher.getDocListNC(SolrIndexSearcher.java:1617)
+	at org.apache.solr.search.SolrIndexSearcher.getDocListC(SolrIndexSearcher.java:1433)
+	at org.apache.solr.search.SolrIndexSearcher.search(SolrIndexSearcher.java:580)
+	at org.apache.solr.handler.component.QueryComponent.doProcessUngroupedSearch(QueryComponent.java:1485)
+	at org.apache.solr.handler.component.QueryComponent.process(QueryComponent.java:398)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:305)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-03-25 11:35:45.412 ERROR (qtp153245266-22) [   x:mesh] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Expected identifier at pos 0 str='(ConceptName)'
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Expected identifier at pos 0 str='(ConceptName)'
+	at org.apache.solr.search.StrParser.getId(StrParser.java:189)
+	at org.apache.solr.search.StrParser.getId(StrParser.java:168)
+	at org.apache.solr.search.FunctionQParser.parseValueSource(FunctionQParser.java:391)
+	at org.apache.solr.search.FunctionQParser.parse(FunctionQParser.java:86)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.search.DisMaxQParser.addBoostFunctions(DisMaxQParser.java:126)
+	at org.apache.solr.search.DisMaxQParser.parse(DisMaxQParser.java:114)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+
+2020-03-25 11:35:45.413 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&defType=dismax&bf=(ConceptName)^2&wt=json} status=400 QTime=4
+2020-03-25 11:38:56.776 ERROR (qtp153245266-21) [   x:mesh] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Expected identifier at pos 15 str='if(ConceptName,'
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Expected identifier at pos 15 str='if(ConceptName,'
+	at org.apache.solr.search.StrParser.getId(StrParser.java:189)
+	at org.apache.solr.search.StrParser.getId(StrParser.java:168)
+	at org.apache.solr.search.FunctionQParser.parseValueSource(FunctionQParser.java:391)
+	at org.apache.solr.search.FunctionQParser.parseValueSource(FunctionQParser.java:254)
+	at org.apache.solr.search.ValueSourceParser$74.parse(ValueSourceParser.java:874)
+	at org.apache.solr.search.FunctionQParser.parseValueSource(FunctionQParser.java:398)
+	at org.apache.solr.search.FunctionQParser.parse(FunctionQParser.java:86)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.search.DisMaxQParser.addBoostFunctions(DisMaxQParser.java:126)
+	at org.apache.solr.search.DisMaxQParser.parse(DisMaxQParser.java:114)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+
+2020-03-25 11:38:56.780 INFO  (qtp153245266-21) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&defType=dismax&bf=if(ConceptName,+"Myocardial+Infarction")&wt=json} status=400 QTime=17
+2020-03-25 11:39:35.117 ERROR (qtp153245266-21) [   x:mesh] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field: "Infarction"
+	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1236)
+	at org.apache.solr.search.FunctionQParser.parseValueSource(FunctionQParser.java:410)
+	at org.apache.solr.search.FunctionQParser.parse(FunctionQParser.java:86)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.search.DisMaxQParser.addBoostFunctions(DisMaxQParser.java:126)
+	at org.apache.solr.search.DisMaxQParser.parse(DisMaxQParser.java:114)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-03-25 11:39:35.118 INFO  (qtp153245266-21) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&defType=dismax&bf=if(termfreq(ConceptName,+"Myocardial+Infarction"))&wt=json} status=400 QTime=2
+2020-03-25 11:40:11.165 ERROR (qtp153245266-21) [   x:mesh] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field: "Infarction"
+	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1236)
+	at org.apache.solr.search.FunctionQParser.parseValueSource(FunctionQParser.java:410)
+	at org.apache.solr.search.FunctionQParser.parse(FunctionQParser.java:86)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.search.DisMaxQParser.addBoostFunctions(DisMaxQParser.java:126)
+	at org.apache.solr.search.DisMaxQParser.parse(DisMaxQParser.java:114)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-03-25 11:40:11.167 INFO  (qtp153245266-21) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&defType=dismax&bf=if(termfreq(ConceptName,"Myocardial+Infarction"))&wt=json} status=400 QTime=9
+2020-03-25 11:40:46.082 INFO  (qtp153245266-20) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&defType=dismax&bf=&wt=json} hits=5 status=0 QTime=9
+2020-03-25 11:40:58.013 INFO  (qtp153245266-20) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=if(termfreq(ConceptName,"Myocardial+Infarction"))&defType=dismax&wt=json} hits=5 status=0 QTime=29
+2020-03-25 11:41:17.932 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=if(termfreq(ConceptName,"Myocardial+Infarction"))&defType=edismax&wt=json} hits=5 status=0 QTime=43
+2020-03-25 11:41:53.757 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=dismax&bf=if(termfreq(ConceptName,"Myocardial+Infarction"))&wt=json} hits=0 status=0 QTime=4
+2020-03-25 11:42:02.818 INFO  (qtp153245266-18) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=*&wt=json} hits=9 status=0 QTime=4
+2020-03-25 11:42:55.672 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=dismax&score=&bf=if(termfreq(ConceptName,"Myocardial+Infarction"))&wt=json} hits=0 status=0 QTime=1
+2020-03-25 11:42:59.881 INFO  (qtp153245266-18) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=dismax&bf=if(termfreq(ConceptName,"Myocardial+Infarction"))&wt=json&scoredesc=} hits=0 status=0 QTime=1
+2020-03-25 11:44:22.077 INFO  (qtp153245266-18) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=dismax&bf=if(termfreq(ConceptName,"Myocardial+Infarction"))&fl=*,score&wt=json} hits=0 status=0 QTime=11
+2020-03-25 11:44:31.623 ERROR (qtp153245266-16) [   x:mesh] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error parsing fieldname: Expected identifier at pos 0 str='(*,score)'
+	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:392)
+	at org.apache.solr.search.SolrReturnFields.parseFieldList(SolrReturnFields.java:145)
+	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:123)
+	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:99)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:139)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Expected identifier at pos 0 str='(*,score)'
+	at org.apache.solr.search.StrParser.getId(StrParser.java:189)
+	at org.apache.solr.search.StrParser.getId(StrParser.java:168)
+	at org.apache.solr.search.FunctionQParser.parseValueSource(FunctionQParser.java:391)
+	at org.apache.solr.search.FunctionQParser.parse(FunctionQParser.java:86)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:333)
+	... 45 more
+
+2020-03-25 11:44:31.623 INFO  (qtp153245266-16) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=dismax&bf=if(termfreq(ConceptName,"Myocardial+Infarction"))&fl=(*,score)&wt=json} status=400 QTime=2
+2020-03-25 11:45:32.052 INFO  (qtp153245266-16) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=dismax&bf=if(termfreq(ConceptName,"Myocardial+Infarction"))&fl=*,score&wt=json} hits=0 status=0 QTime=1
+2020-03-25 11:46:13.449 INFO  (qtp153245266-16) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=dismax&bf=if(termfreq(ConceptName,"Myocardial+Infarction"))&fl=*,score&wt=json} hits=0 status=0 QTime=0
+2020-03-25 11:46:33.281 INFO  (qtp153245266-16) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=*&wt=json} hits=9 status=0 QTime=0
+2020-03-25 11:47:26.936 INFO  (qtp153245266-16) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=dismax&bf=ConceptName&wt=json} hits=0 status=0 QTime=0
+2020-03-25 11:47:41.325 INFO  (qtp153245266-21) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&bf=ConceptName&wt=json} hits=5 status=0 QTime=1
+2020-03-25 11:48:28.357 INFO  (qtp153245266-15) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=*:*&wt=json} hits=9 status=0 QTime=3
+2020-03-25 11:48:54.811 INFO  (qtp153245266-15) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&bf=product(ConceptName,10)&wt=json} hits=5 status=0 QTime=2
+2020-03-25 11:49:47.909 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&score=&bf=product(ConceptName,10)&wt=json} hits=5 status=0 QTime=12
+2020-03-25 11:49:56.289 INFO  (qtp153245266-17) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&bf=product(ConceptName,10)&wt=json} hits=5 status=0 QTime=1
+2020-03-25 11:54:25.352 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&qf="ConceptName^2.0"&wt=json} hits=5 status=0 QTime=4
+2020-03-25 11:54:55.323 INFO  (qtp153245266-15) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&qf="ConceptName^10.0"&wt=json} hits=5 status=0 QTime=0
+2020-03-25 11:55:01.969 INFO  (qtp153245266-20) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&qf="ConceptName^0.5"&wt=json} hits=5 status=0 QTime=1
+2020-03-25 11:55:10.157 INFO  (qtp153245266-20) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&qf="ConceptName^10.0"&wt=json} hits=5 status=0 QTime=0
+2020-03-25 11:55:51.048 INFO  (qtp153245266-21) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&wt=json} hits=5 status=0 QTime=1
+2020-03-25 11:56:11.352 INFO  (qtp153245266-21) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=*:*&wt=json} hits=9 status=0 QTime=2
+2020-03-25 11:56:37.948 INFO  (qtp153245266-16) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&rows=10&wt=json} hits=5 status=0 QTime=0
+2020-03-25 11:56:47.148 INFO  (qtp153245266-19) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial"&rows=10&wt=json} hits=5 status=0 QTime=15
+2020-03-25 11:57:20.508 INFO  (qtp153245266-19) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial"&wt=json&qf"ConceptName^2.0"=} hits=5 status=0 QTime=0
+2020-03-25 12:08:11.162 INFO  (qtp153245266-16) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&boost=popularyti&wt=json} hits=5 status=0 QTime=0
+2020-03-25 12:08:21.979 INFO  (qtp153245266-19) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&boost=popularity&wt=json} hits=5 status=0 QTime=1
+2020-03-25 12:08:36.332 INFO  (qtp153245266-19) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&wt=json} hits=5 status=0 QTime=0
+2020-03-25 12:08:56.392 ERROR (qtp153245266-17) [   x:mesh] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'ConceptNae:["Myocardial Infarction"]': Encountered " "]" "] "" at line 1, column 35.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'ConceptNae:["Myocardial Infarction"]': Encountered " "]" "] "" at line 1, column 35.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:264)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " "]" "] "" at line 1, column 35.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:453)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:260)
+	... 44 more
+
+2020-03-25 12:08:56.393 INFO  (qtp153245266-17) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptNae:["Myocardial+Infarction"]&wt=json} status=400 QTime=7
+2020-03-25 12:09:05.021 ERROR (qtp153245266-22) [   x:mesh] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field ConceptNae
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1305)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:448)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:239)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:524)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1083)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:541)
+	at org.apache.solr.parser.SolrQueryParserBase.handleQuotedTerm(SolrQueryParserBase.java:822)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:549)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:260)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-03-25 12:09:05.021 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptNae:"Myocardial+Infarction"&wt=json} status=400 QTime=1
+2020-03-25 12:09:10.280 INFO  (qtp153245266-17) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:"Myocardial+Infarction"&wt=json} hits=0 status=0 QTime=1
+2020-03-25 12:09:19.361 ERROR (qtp153245266-18) [   x:mesh] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'ConceptName:["Myocardial Infarction"]': Encountered " "]" "] "" at line 1, column 36.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'ConceptName:["Myocardial Infarction"]': Encountered " "]" "] "" at line 1, column 36.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:264)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " "]" "] "" at line 1, column 36.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:453)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:260)
+	... 44 more
+
+2020-03-25 12:09:19.361 INFO  (qtp153245266-18) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:["Myocardial+Infarction"]&wt=json} status=400 QTime=7
+2020-03-25 12:09:37.208 INFO  (qtp153245266-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585138176115} status=0 QTime=3
+2020-03-25 12:09:37.359 INFO  (qtp153245266-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585138176116} status=0 QTime=144
+2020-03-25 12:09:37.462 INFO  (qtp153245266-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585138176116} status=0 QTime=98
+2020-03-25 12:09:57.696 INFO  (qtp153245266-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585138176115} status=0 QTime=0
+2020-03-25 12:09:57.718 INFO  (qtp153245266-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585138197683&since=0} status=0 QTime=9
+2020-03-25 12:09:57.752 INFO  (qtp153245266-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585138176116} status=0 QTime=49
+2020-03-25 12:10:07.693 INFO  (qtp153245266-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585138197683&since=0} status=0 QTime=0
+2020-03-27 17:25:10.853 INFO  (qtp153245266-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=7049
+2020-03-27 17:25:16.249 INFO  (qtp153245266-22) [   x:mesh] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.mesh, tag=null
+2020-03-27 17:25:17.771 INFO  (qtp153245266-22) [   x:mesh] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@554c8855: rootName = null, domain = solr.core.mesh, service url = null, agent id = null] for registry solr.core.mesh / com.codahale.metrics.MetricRegistry@47694123
+2020-03-27 17:25:22.810 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.SolrCore [mesh]  CLOSING SolrCore org.apache.solr.core.SolrCore@575ef82a
+2020-03-27 17:25:22.842 INFO  (qtp153245266-22) [   x:mesh] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.mesh, tag=SolrCore@575ef82a
+2020-03-27 17:25:28.682 INFO  (qtp153245266-22) [   x:mesh] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=mesh&deleteDataDir=true&action=UNLOAD&wt=json&deleteIndex=true} status=0 QTime=13343
+2020-03-27 17:25:43.614 INFO  (qtp153245266-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=227
+2020-03-27 17:25:43.792 INFO  (qtp153245266-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=125
+2020-03-27 17:25:43.956 INFO  (qtp153245266-13) [   x:mesh] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=mesh&action=STATUS&wt=json} status=0 QTime=130
+2020-03-27 17:25:44.582 INFO  (qtp153245266-13) [   x:mesh] o.a.s.h.a.CoreAdminOperation core create command name=mesh&action=CREATE&instanceDir=mesh&wt=json
+2020-03-27 17:25:48.956 INFO  (qtp153245266-13) [   x:mesh] o.a.s.c.SolrResourceLoader [mesh] Added 61 libs to classloader, from paths: [/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/clustering/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/extraction/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/langid/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/velocity/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/dist]
+2020-03-27 17:25:52.684 INFO  (qtp153245266-13) [   x:mesh] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.3.0
+2020-03-27 17:25:54.094 INFO  (qtp153245266-13) [   x:mesh] o.a.s.s.IndexSchema [mesh] Schema name=default-config
+2020-03-27 17:25:57.429 INFO  (qtp153245266-13) [   x:mesh] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-03-27 17:25:57.584 INFO  (qtp153245266-13) [   x:mesh] o.a.s.c.CoreContainer Creating SolrCore 'mesh' using configuration from instancedir /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh, trusted=true
+2020-03-27 17:25:57.657 INFO  (qtp153245266-13) [   x:mesh] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.mesh' (registry 'solr.core.mesh') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2020-03-27 17:25:57.676 INFO  (qtp153245266-13) [   x:mesh] o.a.s.c.SolrCore [[mesh] ] Opening new SolrCore at [/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh], dataDir=[/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh/data/]
+2020-03-27 17:25:58.567 INFO  (qtp153245266-13) [   x:mesh] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-03-27 17:26:00.533 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-03-27 17:26:00.533 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-03-27 17:26:00.595 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-03-27 17:26:00.595 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-03-27 17:26:00.734 INFO  (qtp153245266-13) [   x:mesh] o.a.s.s.SolrIndexSearcher Opening [Searcher@25473f2c[mesh] main]
+2020-03-27 17:26:00.751 INFO  (qtp153245266-13) [   x:mesh] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh/conf
+2020-03-27 17:26:00.794 INFO  (qtp153245266-13) [   x:mesh] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-03-27 17:26:00.814 INFO  (qtp153245266-13) [   x:mesh] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-03-27 17:26:00.921 INFO  (qtp153245266-13) [   x:mesh] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-03-27 17:26:00.928 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1662338949110038528
+2020-03-27 17:26:00.935 INFO  (qtp153245266-13) [   x:mesh] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=mesh&action=CREATE&instanceDir=mesh&wt=json} status=0 QTime=16375
+2020-03-27 17:26:00.950 INFO  (searcherExecutor-15-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@25473f2c[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-03-27 17:26:00.950 INFO  (searcherExecutor-15-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-03-27 17:26:00.950 INFO  (searcherExecutor-15-thread-1-processing-x:mesh) [   x:mesh] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-03-27 17:26:01.750 INFO  (searcherExecutor-15-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.SolrCore [mesh] Registered new searcher Searcher@25473f2c[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-03-27 17:26:57.093 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@fbd1f6{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-03-27 17:26:57.111 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-03-27 17:26:57.317 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1076984738
+2020-03-27 17:26:57.344 INFO  (coreCloseExecutor-20-thread-1) [   x:mesh] o.a.s.c.SolrCore [mesh]  CLOSING SolrCore org.apache.solr.core.SolrCore@192abed9
+2020-03-27 17:26:57.344 INFO  (coreCloseExecutor-20-thread-1) [   x:mesh] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.mesh, tag=SolrCore@192abed9
+2020-03-27 17:26:57.345 INFO  (coreCloseExecutor-20-thread-1) [   x:mesh] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@72767d9d: rootName = null, domain = solr.core.mesh, service url = null, agent id = null] for registry solr.core.mesh / com.codahale.metrics.MetricRegistry@6c989072
+2020-03-27 17:26:57.708 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2020-03-27 17:26:57.709 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@79e18e38: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@321b8d07
+2020-03-27 17:26:57.750 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2020-03-27 17:26:57.751 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@224b4d61: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@b3a48de
+2020-03-27 17:26:57.780 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2020-03-27 17:26:57.780 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5d5d9e5: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@7eef714
+2020-03-27 17:26:59.194 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@15bbf42f{/solr,null,UNAVAILABLE}{/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr-webapp/webapp}

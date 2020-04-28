@@ -1,68 +1,742 @@
-2019-12-09 19:19:03.832 INFO  (main) [   ] o.e.j.u.log Logging initialized @3125ms to org.eclipse.jetty.util.log.Slf4jLog
-2019-12-09 19:19:05.754 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.rewrite.handler.RedirectRegexRule.setReplacement(java.lang.String) in file:///home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/etc/jetty.xml
-2019-12-09 19:19:06.207 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
-2019-12-09 19:19:06.208 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/etc/jetty-http.xml
-2019-12-09 19:19:06.237 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 1.8.0_221-b11
-2019-12-09 19:19:06.445 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/contexts/] at interval 0
-2019-12-09 19:19:07.719 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2019-12-09 19:19:07.742 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2019-12-09 19:19:07.742 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2019-12-09 19:19:07.749 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2019-12-09 19:19:08.085 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2019-12-09 19:19:08.124 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.3.0
-2019-12-09 19:19:08.125 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2019-12-09 19:19:08.126 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0
-2019-12-09 19:19:08.131 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-12-09T19:19:08.131Z
-2019-12-09 19:19:08.332 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/solr
-2019-12-09 19:19:08.377 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/solr/solr.xml
-2019-12-09 19:19:09.059 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3, but no JMX reporters were configured - adding default JMX reporter.
-2019-12-09 19:19:10.952 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2019-12-09 19:19:11.866 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@e8df99a[provider=null,keyStore=null,trustStore=null]
-2019-12-09 19:19:11.866 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@e8df99a[provider=null,keyStore=null,trustStore=null]
-2019-12-09 19:19:12.184 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@5c10f1c3[provider=null,keyStore=null,trustStore=null]
-2019-12-09 19:19:12.184 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@5c10f1c3[provider=null,keyStore=null,trustStore=null]
-2019-12-09 19:19:12.834 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2019-12-09 19:19:12.858 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2019-12-09 19:19:13.311 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-12-09 19:19:13.315 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-12-09 19:19:13.330 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-12-09 19:19:13.859 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/solr
-2019-12-09 19:19:13.860 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [mesh]
-2019-12-09 19:19:14.190 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrResourceLoader [mesh] Added 61 libs to classloader, from paths: [/home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/contrib/clustering/lib, /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/contrib/extraction/lib, /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/contrib/langid/lib, /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/contrib/velocity/lib, /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/dist]
-2019-12-09 19:19:14.373 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@10163d6{/solr,file:///home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/solr-webapp/webapp/,AVAILABLE}{/home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/solr-webapp/webapp}
-2019-12-09 19:19:14.529 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@1c1bbc4e{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2019-12-09 19:19:14.529 INFO  (main) [   ] o.e.j.s.Server Started @13826ms
-2019-12-09 19:19:17.643 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.3.0
-2019-12-09 19:19:18.404 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.IndexSchema [mesh] Schema name=default-config
-2019-12-09 19:19:20.625 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2019-12-09 19:19:20.753 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.CoreContainer Creating SolrCore 'mesh' using configuration from instancedir /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/solr/mesh, trusted=true
-2019-12-09 19:19:20.888 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.mesh' (registry 'solr.core.mesh') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-12-09 19:19:20.952 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrCore [[mesh] ] Opening new SolrCore at [/home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/solr/mesh], dataDir=[/home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/solr/mesh/data/]
-2019-12-09 19:19:21.162 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2019-12-09 19:19:22.706 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2019-12-09 19:19:22.707 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2019-12-09 19:19:22.729 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2019-12-09 19:19:22.729 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2019-12-09 19:19:22.910 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.SolrIndexSearcher Opening [Searcher@4d6fd9a2[mesh] main]
-2019-12-09 19:19:22.975 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/enzo/Documentos/Docker/mesh-annotation/buid-solr/solr-8.3.0/server/solr/mesh/conf
-2019-12-09 19:19:23.086 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2019-12-09 19:19:23.125 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2019-12-09 19:19:23.163 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2019-12-09 19:19:23.210 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1652471012482088960
-2019-12-09 19:19:23.219 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4d6fd9a2[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2019-12-09 19:19:23.219 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-12-09 19:19:23.219 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2019-12-09 19:19:23.250 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.SolrCore [mesh] Registered new searcher Searcher@4d6fd9a2[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2019-12-09 19:19:25.461 WARN  (qtp333683827-17) [   x:mesh] o.a.s.h.l.XMLLoader Ignoring field boost: 8.0 as index-time boosts are not supported anymore
-2019-12-09 19:19:38.550 INFO  (qtp333683827-17) [   x:mesh] o.a.s.u.p.LogUpdateProcessorFactory [mesh]  webapp=/solr path=/update params={}{add=[ad931c5f-961e-4098-9c1c-8378276fe2af (1652471014855016448), 79c5bf31-041c-41b0-82a1-84f00782d5c3 (1652471014987137024), b6516dca-d61c-41cb-89a6-46c92ab0ab63 (1652471014995525632), f7eaef27-77b2-4e06-a5c4-d29ad3894b31 (1652471015002865664), 8249877b-db50-418f-a006-484f410ff40b (1652471015008108544), bac1f61f-5e85-4499-a46e-d00f8eccc8cb (1652471015011254272), 832e9f70-16b7-470f-9198-64e9c1f8b570 (1652471015016497152), 7e3407b8-594c-472f-a642-5bcaaa2299a7 (1652471015028031488), afbc8d0c-b970-4e19-b78c-e872fa5c132e (1652471015034322944), 11be21bf-cd35-4148-a6ec-51c2a765c40f (1652471015042711552), ... (29640 adds)]} 0 13306
-2019-12-09 19:19:38.624 INFO  (qtp333683827-13) [   x:mesh] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1652471028644839424,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2019-12-09 19:19:38.624 INFO  (qtp333683827-13) [   x:mesh] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@4404ce55 commitCommandVersion:1652471028644839424
-2019-12-09 19:19:46.403 INFO  (qtp333683827-13) [   x:mesh] o.a.s.s.SolrIndexSearcher Opening [Searcher@5a1133b6[mesh] main]
-2019-12-09 19:19:46.412 INFO  (qtp333683827-13) [   x:mesh] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2019-12-09 19:19:46.413 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5a1133b6[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.3.0):C29640:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-72-generic, timestamp=1575919184587}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-12-09 19:19:46.413 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-12-09 19:19:46.471 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.SolrCore [mesh] Registered new searcher Searcher@5a1133b6[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.3.0):C29640:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-72-generic, timestamp=1575919184587}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2019-12-09 19:19:46.487 INFO  (qtp333683827-13) [   x:mesh] o.a.s.u.p.LogUpdateProcessorFactory [mesh]  webapp=/solr path=/update params={commit=true}{commit=} 0 7864
-2019-12-09 19:21:39.170 INFO  (qtp333683827-18) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=*&wt=json} hits=29640 status=0 QTime=5358
-2019-12-09 19:22:26.787 INFO  (qtp333683827-19) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=myocardial+infarction&wt=json} hits=157 status=0 QTime=3031
-2019-12-09 19:22:43.269 INFO  (qtp333683827-19) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="myocardial+infarction"&wt=json} hits=42 status=0 QTime=656
+2020-04-28 13:23:25.704 INFO  (main) [   ] o.e.j.u.log Logging initialized @4918ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-04-28 13:23:27.750 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.rewrite.handler.RedirectRegexRule.setReplacement(java.lang.String) in file:///home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/etc/jetty.xml
+2020-04-28 13:23:28.644 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2020-04-28 13:23:28.645 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/etc/jetty-http.xml
+2020-04-28 13:23:28.659 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 1.8.0_221-b11
+2020-04-28 13:23:29.011 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/contexts/] at interval 0
+2020-04-28 13:23:30.806 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-04-28 13:23:30.910 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-04-28 13:23:30.910 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-04-28 13:23:30.976 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2020-04-28 13:23:31.602 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-04-28 13:23:31.689 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.3.0
+2020-04-28 13:23:31.691 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-04-28 13:23:31.695 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0
+2020-04-28 13:23:31.716 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-04-28T13:23:31.716Z
+2020-04-28 13:23:32.230 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr
+2020-04-28 13:23:32.356 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/solr.xml
+2020-04-28 13:23:34.160 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3, but no JMX reporters were configured - adding default JMX reporter.
+2020-04-28 13:23:37.739 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-04-28 13:23:39.980 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@2f40e5db[provider=null,keyStore=null,trustStore=null]
+2020-04-28 13:23:39.982 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@2f40e5db[provider=null,keyStore=null,trustStore=null]
+2020-04-28 13:23:40.564 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@78365cfa[provider=null,keyStore=null,trustStore=null]
+2020-04-28 13:23:40.564 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@78365cfa[provider=null,keyStore=null,trustStore=null]
+2020-04-28 13:23:42.475 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-04-28 13:23:42.510 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-04-28 13:23:43.328 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2020-04-28 13:23:43.330 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2020-04-28 13:23:43.347 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2020-04-28 13:23:43.821 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr
+2020-04-28 13:23:43.822 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [mesh]
+2020-04-28 13:23:44.539 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrResourceLoader [mesh] Added 61 libs to classloader, from paths: [/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/clustering/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/extraction/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/langid/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/velocity/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/dist]
+2020-04-28 13:23:44.868 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@15bbf42f{/solr,file:///home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr-webapp/webapp/,AVAILABLE}{/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr-webapp/webapp}
+2020-04-28 13:23:44.964 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@fbd1f6{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-04-28 13:23:44.966 INFO  (main) [   ] o.e.j.s.Server Started @24184ms
+2020-04-28 13:23:48.062 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.3.0
+2020-04-28 13:23:49.777 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.IndexSchema [mesh] Schema name=default-config
+2020-04-28 13:23:54.204 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-04-28 13:23:54.460 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.CoreContainer Creating SolrCore 'mesh' using configuration from instancedir /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh, trusted=true
+2020-04-28 13:23:54.505 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.mesh' (registry 'solr.core.mesh') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2020-04-28 13:23:54.645 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrCore [[mesh] ] Opening new SolrCore at [/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh], dataDir=[/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh/data/]
+2020-04-28 13:23:55.188 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-04-28 13:23:58.731 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-04-28 13:23:58.732 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-04-28 13:23:58.786 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-04-28 13:23:58.787 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-04-28 13:23:59.158 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.SolrIndexSearcher Opening [Searcher@7d55f9e5[mesh] main]
+2020-04-28 13:23:59.217 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh/conf
+2020-04-28 13:23:59.375 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-04-28 13:23:59.455 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-04-28 13:23:59.544 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-04-28 13:23:59.571 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1665222825288400896
+2020-04-28 13:23:59.585 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7d55f9e5[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-04-28 13:23:59.585 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-04-28 13:23:59.585 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-04-28 13:23:59.652 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.SolrCore [mesh] Registered new searcher Searcher@7d55f9e5[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-04-28 13:24:02.892 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1665222828770721792,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-04-28 13:24:02.894 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2020-04-28 13:24:02.900 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-04-28 13:24:02.901 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.p.LogUpdateProcessorFactory [mesh]  webapp=/solr path=/update params={commit=true}{commit=} 0 62
+2020-04-28 13:24:18.828 INFO  (qtp153245266-18) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=*&wt=json} hits=0 status=0 QTime=404
+2020-04-28 13:25:05.338 INFO  (qtp153245266-18) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=*&wt=json} hits=0 status=0 QTime=0
+2020-04-28 13:25:25.177 INFO  (qtp153245266-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1588080323913} status=0 QTime=1
+2020-04-28 13:25:25.263 INFO  (qtp153245266-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1588080323914} status=0 QTime=67
+2020-04-28 13:25:25.320 INFO  (qtp153245266-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1588080323914} status=0 QTime=43
+2020-04-28 13:25:29.592 INFO  (qtp153245266-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1588080323913} status=0 QTime=0
+2020-04-28 13:25:29.618 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1588080329570} status=0 QTime=5
+2020-04-28 13:25:29.671 INFO  (qtp153245266-20) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1588080323914&ts=1588080323914} status=503 QTime=7
+2020-04-28 13:25:29.689 INFO  (qtp153245266-19) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/replication params={wt=json&command=details&_=1588080329571} status=0 QTime=52
+2020-04-28 13:25:29.730 INFO  (qtp153245266-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1588080323914} status=0 QTime=131
+2020-04-28 13:25:29.771 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/admin/system params={wt=json&_=1588080329571} status=0 QTime=123
+2020-04-28 13:26:20.878 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-04-28 13:26:20.878 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@736df79f commitCommandVersion:0
+2020-04-28 13:26:32.650 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@5986ba21[mesh] realtime]
+2020-04-28 13:26:32.657 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-04-28 13:26:35.893 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-04-28 13:26:35.893 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@736df79f commitCommandVersion:0
+2020-04-28 13:26:38.100 INFO  (qtp153245266-17) [   x:mesh] o.a.s.u.p.LogUpdateProcessorFactory [mesh]  webapp=/solr path=/update params={}{add=[2bc497fd-5d1b-4ca8-9174-cd3a21c7d903 (1665222957522223104), c2ea7e2a-ac20-4199-b110-55a73b93df09 (1665222957737181184), 00685f52-06d8-4f10-b428-386f0da260a3 (1665222957755006976), 177e2f31-aa28-4fd2-9a8f-43955175fb03 (1665222957761298432), f29a9d8d-ae6f-4d49-a38a-6c8fa03d98b4 (1665222957766541312), 52c8744c-c146-4701-8e33-a3f973c173ad (1665222957771784192), 4bcbddb8-f52f-46ef-a111-8ce9017bec35 (1665222957778075648), 02b58b45-3922-434b-ae74-0dc6b6b6bedb (1665222957791707136), 02ade027-226f-488e-82ff-9c02cb5c6818 (1665222957806387200), 8e602a92-7581-4097-ba2c-7d5dfb1e9121 (1665222957824212992), ... (29640 adds)]} 0 32622
+2020-04-28 13:26:40.999 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@194889bd[mesh] realtime]
+2020-04-28 13:26:41.011 INFO  (commitScheduler-13-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-04-28 13:26:41.012 INFO  (qtp153245266-20) [   x:mesh] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1665222991549562880,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-04-28 13:26:41.012 INFO  (qtp153245266-20) [   x:mesh] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@736df79f commitCommandVersion:1665222991549562880
+2020-04-28 13:26:41.662 INFO  (qtp153245266-20) [   x:mesh] o.a.s.s.SolrIndexSearcher Opening [Searcher@15718478[mesh] main]
+2020-04-28 13:26:41.680 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@15718478[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.3.0):C14841:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-96-generic, timestamp=1588080387618}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_1(8.3.0):C6295:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-96-generic, timestamp=1588080392316}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.3.0):C6664:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-96-generic, timestamp=1588080398939}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.3.0):C1840:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-96-generic, timestamp=1588080400971}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-04-28 13:26:41.680 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-04-28 13:26:41.698 INFO  (qtp153245266-20) [   x:mesh] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-04-28 13:26:41.723 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.SolrCore [mesh] Registered new searcher Searcher@15718478[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.3.0):C14841:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-96-generic, timestamp=1588080387618}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_1(8.3.0):C6295:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-96-generic, timestamp=1588080392316}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.3.0):C6664:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-96-generic, timestamp=1588080398939}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.3.0):C1840:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-96-generic, timestamp=1588080400971}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-04-28 13:26:41.741 INFO  (qtp153245266-20) [   x:mesh] o.a.s.u.p.LogUpdateProcessorFactory [mesh]  webapp=/solr path=/update params={commit=true}{commit=} 0 3611
+2020-04-28 13:26:52.591 INFO  (qtp153245266-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1588080412312} status=0 QTime=0
+2020-04-28 13:26:52.623 INFO  (qtp153245266-20) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1588080412570} status=0 QTime=0
+2020-04-28 13:26:52.635 INFO  (qtp153245266-18) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/replication params={wt=json&command=details&_=1588080412571} status=0 QTime=2
+2020-04-28 13:26:52.673 INFO  (qtp153245266-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1588080412314} status=0 QTime=72
+2020-04-28 13:26:52.687 INFO  (qtp153245266-20) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1588080412315&ts=1588080412315} status=503 QTime=0
+2020-04-28 13:26:52.736 INFO  (qtp153245266-21) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/admin/system params={wt=json&_=1588080412570} status=0 QTime=68
+2020-04-28 13:27:02.692 INFO  (qtp153245266-20) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=*&wt=json} hits=29640 status=0 QTime=78
+2020-04-28 13:29:45.628 INFO  (qtp153245266-17) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="Myocardial+Infarction"&wt=json} hits=26 status=0 QTime=170
+2020-04-28 13:31:05.876 ERROR (qtp153245266-17) [   x:mesh] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '"ConceptName":"Myocardial Infarction"': Encountered " ":" ": "" at line 1, column 13.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse '"ConceptName":"Myocardial Infarction"': Encountered " ":" ": "" at line 1, column 13.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:264)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " ":" ": "" at line 1, column 13.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:132)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:260)
+	... 44 more
+
+2020-04-28 13:31:05.879 INFO  (qtp153245266-17) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q="ConceptName":"Myocardial+Infarction"&wt=json} status=400 QTime=33
+2020-04-28 13:31:18.101 INFO  (qtp153245266-16) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:("Myocardial+Infarction")&wt=json} hits=0 status=0 QTime=3
+2020-04-28 13:31:50.496 INFO  (qtp153245266-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1588080709746} status=0 QTime=0
+2020-04-28 13:31:51.376 INFO  (qtp153245266-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1588080709747} status=0 QTime=868
+2020-04-28 13:31:51.445 INFO  (qtp153245266-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1588080709747} status=0 QTime=54
+2020-04-28 13:31:54.932 INFO  (qtp153245266-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1588080709746} status=0 QTime=0
+2020-04-28 13:31:54.949 INFO  (qtp153245266-20) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1588080714896} status=0 QTime=0
+2020-04-28 13:31:54.983 INFO  (qtp153245266-15) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1588080709747&ts=1588080709747} status=503 QTime=4
+2020-04-28 13:31:55.003 INFO  (qtp153245266-20) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/replication params={wt=json&command=details&_=1588080714897} status=0 QTime=5
+2020-04-28 13:31:55.066 INFO  (qtp153245266-19) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/admin/system params={wt=json&_=1588080714896} status=0 QTime=105
+2020-04-28 13:31:55.087 INFO  (qtp153245266-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1588080709747} status=0 QTime=158
+2020-04-28 13:32:00.101 INFO  (qtp153245266-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1588080709746} status=0 QTime=0
+2020-04-28 13:32:00.201 INFO  (qtp153245266-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1588080709747} status=0 QTime=92
+2020-04-28 13:32:21.912 INFO  (qtp153245266-21) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:Myocardial+Infarction&_=1588080719874} hits=67 status=0 QTime=84
+2020-04-28 13:33:25.418 INFO  (qtp153245266-13) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=D009203&_=1588080719874} hits=1 status=0 QTime=2
+2020-04-28 13:34:03.827 INFO  (qtp153245266-21) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:Myocardial+Infarction&_=1588080719874} hits=67 status=0 QTime=1
+2020-04-28 13:34:27.195 INFO  (qtp153245266-18) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:"Myocardial+Infarction"&_=1588080719874} hits=0 status=0 QTime=0
+2020-04-28 13:34:39.765 INFO  (qtp153245266-18) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:Myocardial+Infarction&_=1588080719874} hits=67 status=0 QTime=1
+2020-04-28 13:35:16.745 ERROR (qtp153245266-21) [   x:mesh] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'ConceptName:+Myocardial +Infarction': Encountered " "+" "+ "" at line 1, column 12.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'ConceptName:+Myocardial +Infarction': Encountered " "+" "+ "" at line 1, column 12.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:264)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " "+" "+ "" at line 1, column 12.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:260)
+	... 44 more
+
+2020-04-28 13:35:16.747 INFO  (qtp153245266-21) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:%2BMyocardial+%2BInfarction&_=1588080719874} status=400 QTime=3
+2020-04-28 13:35:35.547 ERROR (qtp153245266-18) [   x:mesh] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '*:+Myocardial +Infarction': Encountered " "+" "+ "" at line 1, column 2.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse '*:+Myocardial +Infarction': Encountered " "+" "+ "" at line 1, column 2.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:264)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " "+" "+ "" at line 1, column 2.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:260)
+	... 44 more
+
+2020-04-28 13:35:35.547 INFO  (qtp153245266-18) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=*:%2BMyocardial+%2BInfarction&_=1588080719874} status=400 QTime=1
+2020-04-28 13:36:08.087 INFO  (qtp153245266-21) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:Myocardial+Infarction&_=1588080719874} hits=67 status=0 QTime=0
+2020-04-28 13:37:48.559 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:myocardial+infarction&_=1588080719874} hits=67 status=0 QTime=1
+2020-04-28 13:37:50.922 INFO  (qtp153245266-21) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:myocardial+infarction&_=1588080719874} hits=67 status=0 QTime=0
+2020-04-28 13:40:06.802 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:myocardial+%2Binfarction&_=1588080719874} hits=67 status=0 QTime=88
+2020-04-28 13:40:10.205 INFO  (qtp153245266-19) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:myocardial+%2Binfarction&_=1588080719874} hits=67 status=0 QTime=1
+2020-04-28 13:40:10.680 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:myocardial+%2Binfarction&_=1588080719874} hits=67 status=0 QTime=5
+2020-04-28 13:40:19.375 INFO  (qtp153245266-19) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:myocardial%2Binfarction&_=1588080719874} hits=0 status=0 QTime=5
+2020-04-28 13:40:29.178 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:myocardial%2B+%2Binfarction&_=1588080719874} hits=67 status=0 QTime=5
+2020-04-28 13:40:39.625 ERROR (qtp153245266-19) [   x:mesh] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'ConceptName:+myocardial+ +infarction': Encountered " "+" "+ "" at line 1, column 12.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'ConceptName:+myocardial+ +infarction': Encountered " "+" "+ "" at line 1, column 12.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:264)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " "+" "+ "" at line 1, column 12.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:260)
+	... 44 more
+
+2020-04-28 13:40:39.626 INFO  (qtp153245266-19) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:%2Bmyocardial%2B+%2Binfarction&_=1588080719874} status=400 QTime=8
+2020-04-28 13:40:52.556 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:myocardial+infarction&_=1588080719874} hits=67 status=0 QTime=1
+2020-04-28 13:41:08.850 INFO  (qtp153245266-19) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:myocardial%2Binfarction&_=1588080719874} hits=0 status=0 QTime=0
+2020-04-28 13:41:22.961 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:myocardial%2B+%2Binfarction&_=1588080719874} hits=67 status=0 QTime=0
+2020-04-28 13:42:05.582 INFO  (qtp153245266-19) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:"myocardial+infarction"&_=1588080719874} hits=0 status=0 QTime=0
+2020-04-28 13:42:18.608 ERROR (qtp153245266-22) [   x:mesh] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'ConceptName:["myocardial infarction"]': Encountered " "]" "] "" at line 1, column 36.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'ConceptName:["myocardial infarction"]': Encountered " "]" "] "" at line 1, column 36.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:264)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " "]" "] "" at line 1, column 36.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:453)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:260)
+	... 44 more
+
+2020-04-28 13:42:18.608 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:["myocardial+infarction"]&_=1588080719874} status=400 QTime=1
+2020-04-28 13:42:32.045 ERROR (qtp153245266-22) [   x:mesh] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'ConceptName:+"myocardial infarction"': Encountered " "+" "+ "" at line 1, column 12.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'ConceptName:+"myocardial infarction"': Encountered " "+" "+ "" at line 1, column 12.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:264)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " "+" "+ "" at line 1, column 12.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:260)
+	... 44 more
+
+2020-04-28 13:42:32.045 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:%2B"myocardial+infarction"&_=1588080719874} status=400 QTime=1
+2020-04-28 13:42:44.723 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:"myocardial+infarction"&_=1588080719874} hits=0 status=0 QTime=1
+2020-04-28 13:46:17.057 INFO  (qtp153245266-21) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:myocardial+infarction&_=1588080719874} hits=67 status=0 QTime=0
+2020-04-28 13:47:02.248 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:M0533759+%2B+M0533760&_=1588080719874} hits=1 status=0 QTime=32
+2020-04-28 13:47:17.411 INFO  (qtp153245266-21) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:M0533759+%2B+M0533760&_=1588080719874} hits=1 status=0 QTime=3
+2020-04-28 13:54:38.238 INFO  (qtp153245266-19) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=ConceptName:*&_=1588080719874} hits=29640 status=0 QTime=476
+2020-04-28 13:54:50.401 INFO  (qtp153245266-22) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=EntryTerm:Calcimycin&_=1588080719874} hits=1 status=0 QTime=135
+2020-04-28 13:56:19.075 INFO  (qtp153245266-13) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=myocardial+infarction&rows=100&_=1588080719874} hits=93 status=0 QTime=445

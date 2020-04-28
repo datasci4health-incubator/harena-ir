@@ -1,316 +1,112 @@
-2019-12-05 18:28:34.459 INFO  (main) [   ] o.e.j.u.log Logging initialized @2143ms to org.eclipse.jetty.util.log.Slf4jLog
-2019-12-05 18:28:34.773 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.rewrite.handler.RedirectRegexRule.setReplacement(java.lang.String) in file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/etc/jetty.xml
-2019-12-05 18:28:34.997 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
-2019-12-05 18:28:34.998 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/etc/jetty-http.xml
-2019-12-05 18:28:35.009 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 1.8.0_221-b11
-2019-12-05 18:28:35.057 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/contexts/] at interval 0
-2019-12-05 18:28:36.060 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2019-12-05 18:28:36.137 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2019-12-05 18:28:36.137 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2019-12-05 18:28:36.152 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
-2019-12-05 18:28:36.408 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2019-12-05 18:28:36.427 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.3.0
-2019-12-05 18:28:36.431 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2019-12-05 18:28:36.432 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0
-2019-12-05 18:28:36.433 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-12-05T18:28:36.433Z
-2019-12-05 18:28:36.491 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr
-2019-12-05 18:28:36.513 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/solr.xml
-2019-12-05 18:28:36.734 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3, but no JMX reporters were configured - adding default JMX reporter.
-2019-12-05 18:28:37.713 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2019-12-05 18:28:38.275 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@2f40e5db[provider=null,keyStore=null,trustStore=null]
-2019-12-05 18:28:38.275 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@2f40e5db[provider=null,keyStore=null,trustStore=null]
-2019-12-05 18:28:38.631 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@78365cfa[provider=null,keyStore=null,trustStore=null]
-2019-12-05 18:28:38.631 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@78365cfa[provider=null,keyStore=null,trustStore=null]
-2019-12-05 18:28:39.218 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2019-12-05 18:28:39.221 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2019-12-05 18:28:39.376 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-12-05 18:28:39.377 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-12-05 18:28:39.411 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-12-05 18:28:39.487 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr
-2019-12-05 18:28:39.489 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [mesh]
-2019-12-05 18:28:39.655 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrResourceLoader [mesh] Added 61 libs to classloader, from paths: [/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/clustering/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/extraction/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/langid/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/velocity/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/dist]
-2019-12-05 18:28:39.665 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@15bbf42f{/solr,file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr-webapp/webapp/,AVAILABLE}{/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr-webapp/webapp}
-2019-12-05 18:28:39.687 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@fbd1f6{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2019-12-05 18:28:39.691 INFO  (main) [   ] o.e.j.s.Server Started @7374ms
-2019-12-05 18:28:40.094 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.3.0
-2019-12-05 18:28:40.446 ERROR (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.XmlConfigFile Exception during parsing file: schema:org.xml.sax.SAXParseException; systemId: solrres:/managed-schema; lineNumber: 134; columnNumber: 12; A tag final do tipo de elemento "field" deve terminar com um delimitador '>".
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
-	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1755)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
-	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
-	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
-	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
-	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:140)
-	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:87)
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:457)
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176)
-	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
-	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70)
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118)
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91)
-	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1300)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1247)
-	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:765)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-
-2019-12-05 18:28:40.449 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => org.apache.solr.common.SolrException: Unable to create core [mesh]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1272)
-org.apache.solr.common.SolrException: Unable to create core [mesh]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1272) ~[?:?]
-	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:765) ~[?:?]
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.0.5.jar:4.0.5]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_221]
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_221]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_221]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core mesh: Can't load schema /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh/conf/managed-schema: org.xml.sax.SAXParseException; systemId: solrres:/managed-schema; lineNumber: 134; columnNumber: 12; A tag final do tipo de elemento "field" deve terminar com um delimitador '>".
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:96) ~[?:?]
-	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1300) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1247) ~[?:?]
-	... 7 more
-Caused by: org.apache.solr.common.SolrException: Can't load schema /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh/conf/managed-schema: org.xml.sax.SAXParseException; systemId: solrres:/managed-schema; lineNumber: 134; columnNumber: 12; A tag final do tipo de elemento "field" deve terminar com um delimitador '>".
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:596) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176) ~[?:?]
-	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105) ~[?:?]
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172) ~[?:?]
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91) ~[?:?]
-	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1300) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1247) ~[?:?]
-	... 7 more
-Caused by: org.apache.solr.common.SolrException: org.xml.sax.SAXParseException; systemId: solrres:/managed-schema; lineNumber: 134; columnNumber: 12; A tag final do tipo de elemento "field" deve terminar com um delimitador '>".
-	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:151) ~[?:?]
-	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:87) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:457) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176) ~[?:?]
-	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105) ~[?:?]
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172) ~[?:?]
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91) ~[?:?]
-	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1300) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1247) ~[?:?]
-	... 7 more
-Caused by: org.xml.sax.SAXParseException: A tag final do tipo de elemento "field" deve terminar com um delimitador '>".
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203) ~[?:1.8.0_221]
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177) ~[?:1.8.0_221]
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400) ~[?:1.8.0_221]
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) ~[?:1.8.0_221]
-	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472) ~[?:1.8.0_221]
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1755) ~[?:1.8.0_221]
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967) ~[?:1.8.0_221]
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602) ~[?:1.8.0_221]
-	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112) ~[?:1.8.0_221]
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505) ~[?:1.8.0_221]
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842) ~[?:1.8.0_221]
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771) ~[?:1.8.0_221]
-	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:1.8.0_221]
-	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243) ~[?:1.8.0_221]
-	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339) ~[?:1.8.0_221]
-	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:140) ~[?:?]
-	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:87) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:457) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176) ~[?:?]
-	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105) ~[?:?]
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172) ~[?:?]
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91) ~[?:?]
-	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1300) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1247) ~[?:?]
-	... 7 more
-2019-12-05 18:37:09.673 ERROR (qtp153245266-17) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'mesh' is not available due to init failure: Could not load conf for core mesh: Can't load schema /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh/conf/managed-schema: org.xml.sax.SAXParseException; systemId: solrres:/managed-schema; lineNumber: 134; columnNumber: 12; A tag final do tipo de elemento "field" deve terminar com um delimitador '>".
-	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1740)
-	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:257)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:542)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:505)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core mesh: Can't load schema /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh/conf/managed-schema: org.xml.sax.SAXParseException; systemId: solrres:/managed-schema; lineNumber: 134; columnNumber: 12; A tag final do tipo de elemento "field" deve terminar com um delimitador '>".
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:96)
-	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1300)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1247)
-	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:765)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	... 1 more
-Caused by: org.apache.solr.common.SolrException: Can't load schema /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh/conf/managed-schema: org.xml.sax.SAXParseException; systemId: solrres:/managed-schema; lineNumber: 134; columnNumber: 12; A tag final do tipo de elemento "field" deve terminar com um delimitador '>".
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:596)
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176)
-	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
-	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70)
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118)
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91)
-	... 9 more
-Caused by: org.apache.solr.common.SolrException: org.xml.sax.SAXParseException; systemId: solrres:/managed-schema; lineNumber: 134; columnNumber: 12; A tag final do tipo de elemento "field" deve terminar com um delimitador '>".
-	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:151)
-	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:87)
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:457)
-	... 16 more
-Caused by: org.xml.sax.SAXParseException; systemId: solrres:/managed-schema; lineNumber: 134; columnNumber: 12; A tag final do tipo de elemento "field" deve terminar com um delimitador '>".
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
-	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1755)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
-	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
-	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
-	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
-	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:140)
-	... 18 more
-
-2019-12-05 18:37:15.330 ERROR (qtp153245266-13) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'mesh' is not available due to init failure: Could not load conf for core mesh: Can't load schema /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh/conf/managed-schema: org.xml.sax.SAXParseException; systemId: solrres:/managed-schema; lineNumber: 134; columnNumber: 12; A tag final do tipo de elemento "field" deve terminar com um delimitador '>".
-	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1740)
-	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:257)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:542)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:505)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:132)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core mesh: Can't load schema /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh/conf/managed-schema: org.xml.sax.SAXParseException; systemId: solrres:/managed-schema; lineNumber: 134; columnNumber: 12; A tag final do tipo de elemento "field" deve terminar com um delimitador '>".
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:96)
-	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1300)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1247)
-	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:765)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	... 1 more
-Caused by: org.apache.solr.common.SolrException: Can't load schema /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh/conf/managed-schema: org.xml.sax.SAXParseException; systemId: solrres:/managed-schema; lineNumber: 134; columnNumber: 12; A tag final do tipo de elemento "field" deve terminar com um delimitador '>".
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:596)
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:176)
-	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172)
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
-	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70)
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:118)
-	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91)
-	... 9 more
-Caused by: org.apache.solr.common.SolrException: org.xml.sax.SAXParseException; systemId: solrres:/managed-schema; lineNumber: 134; columnNumber: 12; A tag final do tipo de elemento "field" deve terminar com um delimitador '>".
-	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:151)
-	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:87)
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:457)
-	... 16 more
-Caused by: org.xml.sax.SAXParseException; systemId: solrres:/managed-schema; lineNumber: 134; columnNumber: 12; A tag final do tipo de elemento "field" deve terminar com um delimitador '>".
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
-	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1755)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
-	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
-	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
-	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
-	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:140)
-	... 18 more
-
-2019-12-05 18:41:07.345 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@fbd1f6{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2019-12-05 18:41:07.345 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2019-12-05 18:41:07.349 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1076984738
-2019-12-05 18:41:07.358 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2019-12-05 18:41:07.361 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@79e18e38: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@4a40d0e1
-2019-12-05 18:41:07.418 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2019-12-05 18:41:07.420 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@224b4d61: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@d3a07f8
-2019-12-05 18:41:07.426 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2019-12-05 18:41:07.432 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5d5d9e5: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@2b0b2534
-2019-12-05 18:41:07.462 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@15bbf42f{/solr,null,UNAVAILABLE}{/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr-webapp/webapp}
+2020-03-24 21:31:31.053 INFO  (main) [   ] o.e.j.u.log Logging initialized @3208ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-03-24 21:31:31.703 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.rewrite.handler.RedirectRegexRule.setReplacement(java.lang.String) in file:///home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/etc/jetty.xml
+2020-03-24 21:31:32.019 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2020-03-24 21:31:32.020 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/etc/jetty-http.xml
+2020-03-24 21:31:32.070 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 1.8.0_221-b11
+2020-03-24 21:31:32.186 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/contexts/] at interval 0
+2020-03-24 21:31:33.301 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-03-24 21:31:33.371 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-03-24 21:31:33.372 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-03-24 21:31:33.386 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2020-03-24 21:31:33.861 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-03-24 21:31:33.927 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.3.0
+2020-03-24 21:31:33.927 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-03-24 21:31:33.927 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0
+2020-03-24 21:31:33.928 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-03-24T21:31:33.928Z
+2020-03-24 21:31:34.110 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr
+2020-03-24 21:31:34.144 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/solr.xml
+2020-03-24 21:31:34.590 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3, but no JMX reporters were configured - adding default JMX reporter.
+2020-03-24 21:31:35.833 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-03-24 21:31:37.041 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@2f40e5db[provider=null,keyStore=null,trustStore=null]
+2020-03-24 21:31:37.042 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@2f40e5db[provider=null,keyStore=null,trustStore=null]
+2020-03-24 21:31:37.513 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@78365cfa[provider=null,keyStore=null,trustStore=null]
+2020-03-24 21:31:37.513 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@78365cfa[provider=null,keyStore=null,trustStore=null]
+2020-03-24 21:31:38.509 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-03-24 21:31:38.522 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-03-24 21:31:38.972 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2020-03-24 21:31:38.979 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2020-03-24 21:31:39.004 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2020-03-24 21:31:39.177 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr
+2020-03-24 21:31:39.179 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [mesh]
+2020-03-24 21:31:39.570 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrResourceLoader [mesh] Added 61 libs to classloader, from paths: [/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/clustering/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/extraction/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/langid/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/velocity/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/dist]
+2020-03-24 21:31:39.688 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@15bbf42f{/solr,file:///home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr-webapp/webapp/,AVAILABLE}{/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr-webapp/webapp}
+2020-03-24 21:31:39.784 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@fbd1f6{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-03-24 21:31:39.788 INFO  (main) [   ] o.e.j.s.Server Started @11962ms
+2020-03-24 21:31:40.570 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.3.0
+2020-03-24 21:31:41.494 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.IndexSchema [mesh] Schema name=default-config
+2020-03-24 21:31:43.642 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-03-24 21:31:43.796 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.CoreContainer Creating SolrCore 'mesh' using configuration from instancedir /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh, trusted=true
+2020-03-24 21:31:43.910 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.mesh' (registry 'solr.core.mesh') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2020-03-24 21:31:43.966 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrCore [[mesh] ] Opening new SolrCore at [/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh], dataDir=[/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh/data/]
+2020-03-24 21:31:44.186 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-03-24 21:31:46.786 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-03-24 21:31:46.787 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-03-24 21:31:46.820 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-03-24 21:31:46.821 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-03-24 21:31:47.119 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.SolrIndexSearcher Opening [Searcher@56c78fb0[mesh] main]
+2020-03-24 21:31:47.173 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh/conf
+2020-03-24 21:31:47.308 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-03-24 21:31:47.355 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-03-24 21:31:47.418 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-03-24 21:31:47.455 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1662082621065134080
+2020-03-24 21:31:47.472 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@56c78fb0[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-03-24 21:31:47.472 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-03-24 21:31:47.472 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-03-24 21:31:47.552 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.SolrCore [mesh] Registered new searcher Searcher@56c78fb0[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-03-24 21:31:48.047 WARN  (qtp153245266-16) [   x:mesh] o.a.s.h.l.XMLLoader Ignoring field boost: 0.5 as index-time boosts are not supported anymore
+2020-03-24 21:31:48.336 INFO  (qtp153245266-16) [   x:mesh] o.a.s.u.p.LogUpdateProcessorFactory [mesh]  webapp=/solr path=/update params={}{add=[a1a5da36-3de4-4886-8668-631f01057b12 (1662082621699522560), 56b891af-1fc2-4d7f-806a-f82bc4090201 (1662082621908189184), ec4dd802-b44f-4fa2-a4fe-96e9de4e7dc1 (1662082621934403584), 581afbab-c7a0-4485-af22-dadf5ac943b4 (1662082621940695040), fdeeb199-fc78-4615-a21e-916c4bd29d95 (1662082621949083648), 64355a28-21ba-4dcd-9f5a-c1a4279ba11a (1662082621954326528), d5668f4e-6e24-40b2-b351-a6938f410d29 (1662082621959569408), ced82b30-e637-493d-82b2-75b9d11294a7 (1662082621972152320), 3eb036c0-b199-4ce0-b77f-721f89715728 (1662082621978443776)]} 0 1631
+2020-03-24 21:31:48.405 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1662082622058135552,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-03-24 21:31:48.406 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@328cf1f3 commitCommandVersion:1662082622058135552
+2020-03-24 21:31:49.353 INFO  (qtp153245266-13) [   x:mesh] o.a.s.s.SolrIndexSearcher Opening [Searcher@70dcbb6a[mesh] main]
+2020-03-24 21:31:49.360 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@70dcbb6a[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.3.0):C9:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-91-generic, timestamp=1585085508652}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-03-24 21:31:49.360 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-03-24 21:31:49.381 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-03-24 21:31:49.411 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.SolrCore [mesh] Registered new searcher Searcher@70dcbb6a[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.3.0):C9:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-91-generic, timestamp=1585085508652}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-03-24 21:31:49.428 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.p.LogUpdateProcessorFactory [mesh]  webapp=/solr path=/update params={commit=true}{commit=} 0 1026
+2020-03-24 21:31:59.970 INFO  (qtp153245266-18) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=Myocardial+Infarction&rows=100&wt=json} hits=6 status=0 QTime=238
+2020-03-24 21:34:26.125 INFO  (qtp153245266-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=198
+2020-03-24 21:34:26.207 INFO  (qtp153245266-19) [   x:mesh] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.mesh, tag=null
+2020-03-24 21:34:26.213 INFO  (qtp153245266-19) [   x:mesh] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2f0caad0: rootName = null, domain = solr.core.mesh, service url = null, agent id = null] for registry solr.core.mesh / com.codahale.metrics.MetricRegistry@5fa15d16
+2020-03-24 21:34:26.267 INFO  (qtp153245266-19) [   x:mesh] o.a.s.c.SolrCore [mesh]  CLOSING SolrCore org.apache.solr.core.SolrCore@5e6af9ec
+2020-03-24 21:34:26.268 INFO  (qtp153245266-19) [   x:mesh] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.mesh, tag=SolrCore@5e6af9ec
+2020-03-24 21:34:26.322 INFO  (qtp153245266-19) [   x:mesh] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=mesh&deleteDataDir=true&action=UNLOAD&wt=json&deleteIndex=true} status=0 QTime=128
+2020-03-24 21:34:43.522 INFO  (qtp153245266-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=21
+2020-03-24 21:34:43.666 INFO  (qtp153245266-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=42
+2020-03-24 21:34:43.682 INFO  (qtp153245266-17) [   x:mesh] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=mesh&action=STATUS&wt=json} status=0 QTime=3
+2020-03-24 21:34:44.037 INFO  (qtp153245266-19) [   x:mesh] o.a.s.h.a.CoreAdminOperation core create command name=mesh&action=CREATE&instanceDir=mesh&wt=json
+2020-03-24 21:34:44.082 INFO  (qtp153245266-19) [   x:mesh] o.a.s.c.SolrResourceLoader [mesh] Added 61 libs to classloader, from paths: [/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/clustering/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/extraction/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/langid/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/contrib/velocity/lib, /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/dist]
+2020-03-24 21:34:44.162 INFO  (qtp153245266-19) [   x:mesh] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.3.0
+2020-03-24 21:34:44.363 INFO  (qtp153245266-19) [   x:mesh] o.a.s.s.IndexSchema [mesh] Schema name=default-config
+2020-03-24 21:34:44.873 INFO  (qtp153245266-19) [   x:mesh] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-03-24 21:34:44.942 INFO  (qtp153245266-19) [   x:mesh] o.a.s.c.CoreContainer Creating SolrCore 'mesh' using configuration from instancedir /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh, trusted=true
+2020-03-24 21:34:44.945 INFO  (qtp153245266-19) [   x:mesh] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.mesh' (registry 'solr.core.mesh') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2020-03-24 21:34:44.949 INFO  (qtp153245266-19) [   x:mesh] o.a.s.c.SolrCore [[mesh] ] Opening new SolrCore at [/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh], dataDir=[/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh/data/]
+2020-03-24 21:34:45.075 INFO  (qtp153245266-19) [   x:mesh] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-03-24 21:34:45.318 INFO  (qtp153245266-19) [   x:mesh] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-03-24 21:34:45.326 INFO  (qtp153245266-19) [   x:mesh] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-03-24 21:34:45.337 INFO  (qtp153245266-19) [   x:mesh] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-03-24 21:34:45.337 INFO  (qtp153245266-19) [   x:mesh] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-03-24 21:34:45.341 INFO  (qtp153245266-19) [   x:mesh] o.a.s.s.SolrIndexSearcher Opening [Searcher@3b73fa75[mesh] main]
+2020-03-24 21:34:45.342 INFO  (qtp153245266-19) [   x:mesh] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr/mesh/conf
+2020-03-24 21:34:45.345 INFO  (qtp153245266-19) [   x:mesh] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-03-24 21:34:45.345 INFO  (qtp153245266-19) [   x:mesh] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-03-24 21:34:45.350 INFO  (qtp153245266-19) [   x:mesh] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-03-24 21:34:45.351 INFO  (qtp153245266-19) [   x:mesh] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1662082807602610176
+2020-03-24 21:34:45.354 INFO  (searcherExecutor-15-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@3b73fa75[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-03-24 21:34:45.354 INFO  (searcherExecutor-15-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-03-24 21:34:45.354 INFO  (searcherExecutor-15-thread-1-processing-x:mesh) [   x:mesh] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-03-24 21:34:45.358 INFO  (searcherExecutor-15-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.SolrCore [mesh] Registered new searcher Searcher@3b73fa75[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-03-24 21:34:45.359 INFO  (qtp153245266-19) [   x:mesh] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=mesh&action=CREATE&instanceDir=mesh&wt=json} status=0 QTime=1321
+2020-03-24 21:35:45.488 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@fbd1f6{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-03-24 21:35:45.488 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-03-24 21:35:45.490 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1076984738
+2020-03-24 21:35:45.496 INFO  (coreCloseExecutor-20-thread-1) [   x:mesh] o.a.s.c.SolrCore [mesh]  CLOSING SolrCore org.apache.solr.core.SolrCore@27377a7b
+2020-03-24 21:35:45.496 INFO  (coreCloseExecutor-20-thread-1) [   x:mesh] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.mesh, tag=SolrCore@27377a7b
+2020-03-24 21:35:45.496 INFO  (coreCloseExecutor-20-thread-1) [   x:mesh] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4bd534b0: rootName = null, domain = solr.core.mesh, service url = null, agent id = null] for registry solr.core.mesh / com.codahale.metrics.MetricRegistry@79529578
+2020-03-24 21:35:45.651 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2020-03-24 21:35:45.654 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@79e18e38: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@59aabe4b
+2020-03-24 21:35:45.663 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2020-03-24 21:35:45.665 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@224b4d61: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@72e1d9d2
+2020-03-24 21:35:45.674 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2020-03-24 21:35:45.675 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5d5d9e5: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@321b8d07
+2020-03-24 21:35:45.700 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@15bbf42f{/solr,null,UNAVAILABLE}{/home/enzo/Documentos/harena-ir/buid-solr/solr-8.3.0/server/solr-webapp/webapp}

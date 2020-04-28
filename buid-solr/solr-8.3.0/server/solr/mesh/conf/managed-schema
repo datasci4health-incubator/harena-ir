@@ -114,6 +114,8 @@
     <fieldType name="auto_text" class="solr.TextField" positionIncrementGap="100">
         <analyzer type="index">
                 <tokenizer class="solr.KeywordTokenizerFactory" />
+		<filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
+		<filter class="solr.PorterStemFilterFactory"/>
                 <filter class="solr.LowerCaseFilterFactory" />
                 <!-- <filter class="solr.EdgeNGramFilterFactory" minGramSize="2" maxGramSize="15" /> -->
         </analyzer>
@@ -321,6 +323,7 @@
       <analyzer type="index">
         <tokenizer class="solr.StandardTokenizerFactory"/>
         <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
+	<filter class="solr.PorterStemFilterFactory"/>
         <!-- in this example, we will only use synonyms at query time
         <filter class="solr.SynonymGraphFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
         <filter class="solr.FlattenGraphFilterFactory"/>
@@ -351,6 +354,7 @@
         <tokenizer class="solr.StandardTokenizerFactory"/>
         <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
         <filter class="solr.LowerCaseFilterFactory"/>
+	<filter class="solr.PorterStemFilterFactory"/>
       </analyzer>
       <analyzer type="query">
         <tokenizer class="solr.StandardTokenizerFactory"/>
